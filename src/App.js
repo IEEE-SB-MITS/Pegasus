@@ -1,5 +1,5 @@
 import './App.css';
-
+import Marquee from "react-fast-marquee";
 
 
 function App() {
@@ -11,8 +11,11 @@ function App() {
           <br />
           Coming Soon
         </h1>
-      
-       
+        {/* <img src="https://i.imgur.com/4zxR5xb.png" alt="" /> */}
+        <Marquee>
+          Coming Soon in few hours....Revealing in sometime
+        </Marquee>
+
       </div>
     </div>
   );
