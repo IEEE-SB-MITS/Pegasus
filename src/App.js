@@ -14,7 +14,6 @@ function App() {
           Coming Soon
         </h1>
         <CountDown/>
-        <Optin/>
         <Preloader/>
       </div>
     </div>
