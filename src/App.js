@@ -1,5 +1,4 @@
 import './App.css';
-import Optin from './components/optin/optin';
 import Preloader from './components/preloader/preloader';
 import './components/Countdown/Timer'
 import CountDown from './components/Countdown/Timer';
@@ -13,7 +12,7 @@ function App() {
           <br />
           Coming Soon
         </h1>
-        <CountDown/>
+        <CountDown/>  
         <Preloader/>
       </div>
     </div>
