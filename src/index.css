@@ -16,7 +16,7 @@ code {
 body {
   color: #fff;
   font-family: "Roboto Condensed", sans-serif;
-  background-image: url("https://i.imgur.com/VIV08AF.png");
+  background-image: url(https://i.imgur.com/VIV08AF.png);
   background-position: top top;
   background-size: cover;
   margin: 0;
@@ -29,13 +29,7 @@ body {
   right: 0;
   bottom: 0;
   text-align: center;
-  background: rgb(49, 49, 177);
-  background: linear-gradient(
-    0deg,
-    rgba(49, 49, 177, 1) 0%,
-    rgba(49, 49, 177, 1) 50%,
-    rgba(49, 49, 177, 0.6) 100%
-  );
+
 }
 
 .container {
