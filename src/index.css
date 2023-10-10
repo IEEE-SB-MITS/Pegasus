@@ -16,7 +16,7 @@ code {
 body {
   color: #fff;
   font-family: "Roboto Condensed", sans-serif;
-  background-image: url(./assets/01.png);
+  background-image: url("https://i.imgur.com/VIV08AF.png");
   background-position: top top;
   background-size: cover;
   margin: 0;
