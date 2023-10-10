@@ -1,7 +1,6 @@
 import './App.css';
-import Preloader from './components/preloader/preloader';
-import './components/Countdown/Timer'
-import CountDown from './components/Countdown/Timer';
+
+
 
 function App() {
   return (
@@ -12,8 +11,8 @@ function App() {
           <br />
           Coming Soon
         </h1>
-        <CountDown/>  
-        <Preloader/>
+      
+       
       </div>
     </div>
   );
