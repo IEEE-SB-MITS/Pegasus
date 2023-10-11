@@ -6,7 +6,6 @@ import Marquee from "react-fast-marquee";
 function App() {
   return (
     <div className="App">
-      <div className="container">
         <h1>
           Website
           <br />
@@ -16,8 +15,6 @@ function App() {
         <Marquee>
           Coming Soon in few hours....Revealing in sometime
         </Marquee>
-
-      </div>
     </div>
   );
 }
