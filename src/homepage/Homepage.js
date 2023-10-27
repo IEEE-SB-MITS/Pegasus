@@ -1,57 +1,99 @@
-import React from "react";
-import LogoBar from "../common/LogoBar";
-import logo from "../assets/newpega.png";
-import cloud_left from "../assets/cloud-left.png";
-import cloud_right from "../assets/cloud-right.png";
-import Marquee from "react-fast-marquee";
-import '../App.css';
-import { motion } from "framer-motion";
+import styles from "../constants/style";
+import { logo } from "../assets";
 
-const Homepage = () => {
-  const handleExpoClick = () => {
-    console.log("Expo Clicked");
-  };
+const Hero = () => {
   return (
-    <div>
-      {/* border-black opacity-100 bg-opacity-25 shadow-md hover:shadow-xl */}
-      <LogoBar />
-      <div className="flex h-full px-10 mx-auto relative">
-        <div className="absolute lg:h-[85vh] h-[90vh] lg:w-[95%] w-[85%] mt-5  flex justify-center items-center flex-col " >
-          <div className=" bg-slate-400 opacity-10  h-full w-full absolute top-0 left-0 rounded-3xl flex z-10 ">
-            
-         
+    <>
+      <section
+        id="home"
+        className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      >
+        <div
+          className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        >
+          {/* <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+          <img src={wie} alt="discount" className="w-[32px] h-[32px]" />
+          <p className={`${styles.paragraph} ml-2`}>
+          <span className="text-white">20%</span> Discount For{" "}
+          <span className="text-white">1 Month</span> Account
+          </p>
+        </div> */}
+
+          <img
+            src={logo}
+            alt="billing"
+            className="w-[60%] block lg:hidden md:hidden relative z-[5]"
+          />
+          <div className="flex flex-row justify-between items-center w-full">
+            <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+              The <br className="sm:block hidden" />{" "}
+              <span className="text-gradient">EXPO and HACK</span>{" "}
+            </h1>
+            {/* <div className="ss:flex hidden md:mr-4 mr-0">
+            <GetStarted />
+          </div> */}
           </div>
-            <img src={cloud_left} alt="" className="absolute lg:left-0 left-0 top-0 opacity-40 z-0 lg:h-[90%]"/>
-            <img src={cloud_right} alt="" className="absolute lg:right-0 -right-1  top-0  opacity-40 z-0 lg:h-[90%]"/>
-               <img src={logo} alt="logo" className="h-[50vw] lg:h-[60%] lg:w-1/2 relative z-30" /> 
-                <div className="flex w-full justify-around flex-col lg:flex-row">
-                  <motion.div className="bg-gradient-to-l from-[#480A27] to-transparent  z-50 h-full p-5  my-5 w-full text-center text-5xl lg:ml-5 lg:mr-2 rounded-3xl font-[Neptune]"
-                   onClick={handleExpoClick}   whileHover={{ scale: 1.1,  }}
-                   whileTap={{
-                     scale: 0.8,}}
-                  >
-                    Expo
-                  </motion.div>
-                  <motion.div whileHover={{ scale: 1.1 }}
-                   whileTap={{
-                     scale: 0.8,}} className="bg-gradient-to-r from-[#1F0120] to-transparent z-50 h-full p-5 my-5 w-full text-center align-middle text-5xl lg:ml-2 lg:mr-5 rounded-3xl font-[Neptune]">
-                    Hack
-                  </motion.div>
-                </div>
-                
 
-                <div className="marquee-container">
-            <Marquee className="mt-10 text-4xl font-[Neptune] opacity-70">
-                10TH & 11TH November... Fasten your belts for the most awaited event of the year...
-                <i className="fa fa-th-list" aria-hidden="true"></i>
-            </Marquee>
-        </div>
-                
+          <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full"></h1>
+          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            perspiciatis minus possimus voluptatibus incidunt repellat
+            dignissimos. Possimus, asperiores ut. Vitae!
+          </p>
         </div>
 
+        <div
+          className={`flex-1 flex ${styles.flexCenter} md:my-8 sm:my-5 my-10 relative`}
+        >
+          <img
+            src={logo}
+            alt="billing"
+            className="w-[60%] hidden lg:block md:block relative z-[5]"
+          />
+
+          {/* gradient start */}
+          <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+          <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
+          <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+          {/* gradient end */}
+        </div>
+
+        {/* <div className={`ss:hidden ${styles.flexCenter}`}>
+        <GetStarted />
+      </div> */}
+      </section>
+      <div className="lg:flex lg:justify-center lg:p-0 px-6 ">
+        <div
+          className="mybtn lg:m-0  my-10"
+          style={{
+            backgroundImage:
+              "linear-gradient(144deg, #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%)",
+          }}
+        >
+          EXPO
+        </div>
+
+        <div
+          className="mybtn lg:m-0 my-10"
+          style={{
+            backgroundImage:
+              "linear-gradient(-144deg, #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%)",
+          }}
+        >
+          HACK
+        </div>
       </div>
-    </div>
+
+      <div className="lg:hidden md:hidden block my-5 mx-10">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus neque
+        facere tenetur. Id iure exercitationem modi iste, doloribus accusamus
+        veritatis cum obcaecati sunt? Consectetur debitis voluptates odit
+        dolorem tempora nostrum ab, omnis est ratione molestias accusantium amet
+        accusamus nemo numquam. Harum, minima excepturi consectetur eius maiores
+        natus dolorem. Esse, inventore.
+      </div>
+    </>
   );
 };
 
-export default Homepage;
+export default Hero;

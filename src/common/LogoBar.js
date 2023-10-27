@@ -8,7 +8,7 @@ import ieeelogo from '../assets/ieee-logo.png';
 
 const LogoBar = () => {
   return (
-    <div className=' pt-5 w-screen text-xl h-1/4   flex justify-around'>
+    <div className='flex justify-around'>
     {/* add ../assets/muthoot_logo.png this image */}
     <img src={ieeelogo} alt="Muthoot Logo" className="w-[7%] h-1/5 mx-auto" />
     <img src={raslogo} alt="Muthoot Logo" className="w-[7%] h-1/6 mx-auto" />
