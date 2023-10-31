@@ -5,6 +5,11 @@ import {
   ball,
   aboutusImg,
   person,
+  call,
+  mail,
+  chair,
+  viceChair,
+  ann,
 } from "../../assets";
 
 const Hack = () => {
@@ -36,7 +41,7 @@ const Hack = () => {
           <img
             src={ball}
             alt=""
-            className="absolute h-2/6 md:h-1/2 lg:h-1/2  -left-12 spinner"
+            className="absolute h-2/6 md:h-full lg:h-3/5  -left-12 spinner"
           />
           <img
             src={ball}
@@ -68,7 +73,7 @@ const Hack = () => {
             <img
               src={aboutusImg}
               alt=""
-              className="absolute md:h-[90%] lg:h-[90%] h-[30%]  top-0 spinner"
+              className="absolute md:h-[90%] lg:h-[90%] h-[30%] w-1/2  top-0 spinner"
             />
           </div>
           <div
@@ -88,53 +93,125 @@ const Hack = () => {
         </div>
       </section>
       <section className="h-screen bg-green-900" id="section3">
-        <div>
-          <h1>Timeline</h1>
-        </div>
+          <div>
+              <h1>Timeline</h1>
+          </div>
       </section>
       <section className="h-screen bg-yellow-900">
         <div>
           <h1>Gallery</h1>
         </div>
       </section>
-      <section className={`h-screen ${styles.hackColor}`}>
+      <section
+        className={`md:h-screen lg:h-screen h-[200vh] ${styles.hackColor} overflow-hidden`}
+        id="section5"
+      >
+        <div className="w-full flex justify-center md:pt-10">
+          <h1 className="text-2xl">Contact Us</h1>
+        </div>
         <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
-             <div className="card mx-10 my-10">
-                <img src={person} className="card-img" alt="" />
-                <div className="card-body">
-                  <h1 className="card-title">CHAIR</h1>
-                  <p className="card-sub-title">the god of the event</p>
-                  <p className="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nemo?</p>
-                  <button className="card-button">CALL NOW</button>
+          <div className="card mx-10 my-10">
+            <img src={chair} className="card-img" alt="" />
+            <div className={`card-body p-4`}>
+              <h1 className="card-title pt-4">Akshay sanjeev</h1>
+              <p className="card-sub-title">chair</p>
+              <div className="w-full h-full flex flex-row items-center justify-center">
+                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
+                  <img
+                    src={call}
+                    alt=""
+                    className="w-[30%]"
+                    style={{ filter: "invert(20)" }}
+                  />
                 </div>
-             </div>
-             <div className="card mx-10 my-10">
-                <img src={person} className="card-img" alt="" />
-                <div className="card-body">
-                  <h1 className="card-title">CHAIR</h1>
-                  <p className="card-sub-title">the god of the event</p>
-                  <p className="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nemo?</p>
-                  <button className="card-button">CALL NOW</button>
+                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
+                  <img
+                    src={mail}
+                    alt=""
+                    className={`w-[30%] `}
+                    style={{ filter: "invert(20)" }}
+                  />
                 </div>
-             </div>
-             <div className="card mx-10 my-10">
-                <img src={person} className="card-img" alt="" />
-                <div className="card-body">
-                  <h1 className="card-title">CHAIR</h1>
-                  <p className="card-sub-title">the god of the event</p>
-                  <p className="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nemo?</p>
-                  <button className="card-button">CALL NOW</button>
+              </div>
+            </div>
+          </div>
+          <div className="card mx-10 my-10">
+            <img src={viceChair} className="card-img" alt="" />
+            <div className={`card-body `}>
+              <h1 className="card-title " style={{ lineHeight: "70px" }}>
+                karthik u
+              </h1>
+              <p className="card-sub-title">vice-chair</p>
+              <div className="w-full h-full flex flex-row items-center justify-center">
+                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
+                  <img
+                    src={call}
+                    alt=""
+                    className="w-[30%]"
+                    style={{ filter: "invert(20)" }}
+                  />
                 </div>
-             </div>
-             <div className="card mx-10 my-10">
-                <img src={person} className="card-img" alt="" />
-                <div className="card-body">
-                  <h1 className="card-title">CHAIR</h1>
-                  <p className="card-sub-title">the god of the event</p>
-                  <p className="card-info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nemo?</p>
-                  <button className="card-button">CALL NOW</button>
+                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
+                  <img
+                    src={mail}
+                    alt=""
+                    className={`w-[30%] `}
+                    style={{ filter: "invert(20)" }}
+                  />
                 </div>
-             </div>
+              </div>
+            </div>
+          </div>
+          <div className="card mx-10 my-10">
+            <img src={ann} className="card-img" alt="" />
+            <div className={`card-body p-4`}>
+              <h1 className="card-title">ann sara baby</h1>
+              <p className="card-sub-title">chair</p>
+              <div className="w-full h-full flex flex-row items-center justify-center">
+                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
+                  <img
+                    src={call}
+                    alt=""
+                    className="w-[30%]"
+                    style={{ filter: "invert(20)" }}
+                  />
+                </div>
+                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
+                  <img
+                    src={mail}
+                    alt=""
+                    className={`w-[30%] `}
+                    style={{ filter: "invert(20)" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card mx-10 my-10">
+            <img src={person} className="card-img" alt="" />
+            <div className={`card-body ${styles.flexCenter} p-4`}>
+              <h1 className="card-title">Rohit</h1>
+              <p className="card-sub-title">chair</p>
+              <div className="w-full h-full flex flex-row items-center justify-center">
+                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
+                  <img
+                    src={call}
+                    alt=""
+                    className="w-[30%]"
+                    style={{ filter: "invert(20)" }}
+                  />
+                </div>
+                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
+                  <img
+                    src={mail}
+                    alt=""
+                    className={`w-[30%] `}
+                    style={{ filter: "invert(20)" }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

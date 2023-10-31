@@ -12,7 +12,12 @@ import clglogo from "./muthoot_logo.svg"
 import ball from "./ballDesign.svg"
 import bkgnd from "./background.svg"
 import aboutusImg from "./aboutUs.svg"
+import chair from "./akshay.jpg"
 import person from "./person.jpg"
+import call from "./call.svg"
+import mail from "./mail.svg"
+import viceChair from "./vicechair.jpg"
+import ann from "./annsara.jpg"
 export {
     cloud_left,
     cloud_right,
@@ -28,5 +33,10 @@ export {
     ball,
     bkgnd,
     aboutusImg,
-    person
+    person,
+    chair,
+    call,
+    mail,
+    viceChair,
+    ann
 };
