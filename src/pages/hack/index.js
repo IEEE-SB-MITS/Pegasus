@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "../../constants/style";
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   logo,
   ball,
@@ -11,6 +12,33 @@ import {
   viceChair,
   ann,
 } from "../../assets";
+import TimelineElement from "./timeline";
+import Timeline from "./timeline";
+
+
+const events = [
+  {
+    year: 2000,
+    description: 'Event 1',
+  },
+  {
+    year: 2005,
+    description: 'Event 2',
+  },
+  {
+    year: 2010,
+    description: 'Event 3',
+  },
+  {
+    year: 2015,
+    description: 'Event 4',
+  },
+  {
+    year: 2020,
+    description: 'Event 5',
+  },
+];
+
 
 const Hack = () => {
   useEffect(() => {
@@ -92,10 +120,8 @@ const Hack = () => {
           </div>
         </div>
       </section>
-      <section className="h-screen bg-green-900" id="section3">
-          <div>
-              <h1>Timeline</h1>
-          </div>
+      <section className={`h-screen ${styles.hackColor} ${styles.flexCenter} relative`} id="section3">
+        <Timeline/>
       </section>
       <section className="h-screen bg-yellow-900">
         <div>
