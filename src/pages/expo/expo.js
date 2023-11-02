@@ -113,8 +113,11 @@ const Expo = () => {
         className={`md:h-screen lg:h-screen h-[200vh] ${styles.expoColor} overflow-hidden`}
         id="section5"
       >
-        <div className="w-full flex justify-center md:pt-10">
-          <h1 className="text-2xl">Contact Us</h1>
+        <div className="w-full flex flex-col justify-center items-center md:pt-10">
+          <h1 className="text-2xl font-bold">Contact Us</h1>
+          <div className="lg:hidden text-xl">
+            Tap the card to contact
+          </div>
         </div>
         <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
           <div className="card mx-10 my-10">
