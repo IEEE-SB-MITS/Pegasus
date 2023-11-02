@@ -83,7 +83,7 @@ const Hack = () => {
             <div id="text" className="text-center my-3">
               <h1 className="text-6xl font-bold">Hackathon</h1>
             </div>
-            <a href="#" id="myRegBtn" className="m-6">
+            <a href="/" id="myRegBtn" className="m-6">
               <i></i>
               <i></i>
               <span>REGISTER</span>
