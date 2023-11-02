@@ -8,6 +8,7 @@ import HackNav from "./common/HackNav";
 import Expo from "./pages/expo/expo";
 
 import {Routes,Route} from 'react-router-dom'
+import Hero from "./homepage/Homepage";
 function App() {
   return (
     // <div className="App h-[95vh] md:h-screen lg:h-screen">
@@ -26,7 +27,8 @@ function App() {
     <>
        <div className="App ">
       <Routes>
-      <Route path="/" element={<Hack />} />
+        {/* <Route path="/" element={<Hero />} /> */}
+        <Route path="/hack" element={<Hack />} />
         <Route path="/expo" element={<Expo />} />
       
       </Routes>

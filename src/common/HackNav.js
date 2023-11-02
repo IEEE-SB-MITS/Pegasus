@@ -6,8 +6,8 @@ import { Link, Element } from 'react-scroll'; // Import Link and Element
 const HackNav = () => {
   let Links = [
     { name: 'HOME', link: 'section1' },
-    { name: 'TIMELINE', link: 'section2' },
-    { name: 'ABOUT', link: 'section3' },
+    { name: 'TIMELINE', link: 'section3' },
+    { name: 'ABOUT', link: 'section2' },
     { name: 'GALLERY', link: 'section4' },
     { name: 'CONTACT', link: 'section5' },
   ];

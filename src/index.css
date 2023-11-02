@@ -22,7 +22,7 @@ code {
 body {
   /* background: linear-gradient(113deg, rgba(158, 12, 55, 0.50) 6.34%, #280129 51.61%, #180119 73.27%, #000 116.42%); */
   /* background: linear-gradient(73deg, #180719 -5.01%, rgba(33, 0, 34, 0.84) 37.16%, rgba(103, 18, 43, 0.78) 100.34%, #000 123.8%); */
-  /* background: linear-gradient( #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%); */
+  background: linear-gradient( #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%);
 
   color: white;
   

@@ -120,20 +120,16 @@ const Hack = () => {
           </div>
         </div>
       </section>
-      <section className={`h-screen ${styles.hackColor} ${styles.flexCenter} relative`} id="section3">
+      <section className={`h-[150vh] ${styles.hackColor} ${styles.flexCenter} flex-col relative`} id="section3">
+        <h1 className="py-12 text-5xl font-extrabold font-mono ">TIMELINE</h1>
         <Timeline/>
-      </section>
-      <section className="h-screen bg-yellow-900">
-        <div>
-          <h1>Gallery</h1>
-        </div>
-      </section>
+      </section> 
       <section
         className={`md:h-screen lg:h-screen h-[200vh] ${styles.hackColor} overflow-hidden`}
         id="section5"
       >
         <div className="w-full flex justify-center md:pt-10">
-          <h1 className="text-2xl">Contact Us</h1>
+          <h1 className="text-5xl pt-12 font-extrabold font-mono">Contact Us</h1>
         </div>
         <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
           <div className="card mx-10 my-10">

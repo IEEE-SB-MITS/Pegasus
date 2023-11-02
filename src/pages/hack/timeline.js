@@ -36,6 +36,10 @@ const items = [
   },
   {
     title: "Nov 24",
+    cardTitle: "Conformation ",
+    cardSubtitle:
+      "Men of the British Expeditionary Force (BEF) wade out to a destroyer during the evacuation from Dunkirk.",
+    cardDetailedText: ["paragraph1", "paragraph2"],
     
         
   }
