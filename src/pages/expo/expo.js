@@ -110,7 +110,7 @@ const Expo = () => {
         </div>
       </section> */}
       <section
-        className={`md:h-screen lg:h-screen h-[230vh] ${styles.expoColor} overflow-hidden`}
+        className={`md:h-screen lg:h-screen h-[200vh] ${styles.expoColor}`}
         id="section5"
       >
         <div className="w-full flex flex-col justify-center items-center md:pt-10">
