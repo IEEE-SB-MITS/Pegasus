@@ -174,7 +174,7 @@ const Expo = () => {
             <img src={ann} className="card-img" alt="" />
             <div className={`card-body p-4`}>
               <h1 className="card-title">ann sara baby</h1>
-              <p className="card-sub-title">chair</p>
+              <p className="card-sub-title">Secretary</p>
               <div className="w-full h-full flex flex-row items-center justify-center">
                 <a href="tel:+919400538729" className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
                   <img
