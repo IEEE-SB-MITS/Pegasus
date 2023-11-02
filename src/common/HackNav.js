@@ -19,9 +19,9 @@ const HackNav = () => {
       <div className={`md:flex items-center justify-between ${styles.hackColor} py-4 md:px-10 px-7`}>
         <div className='font-bold text-2xl pt-2 cursor-pointer flex items-center font-[Poppins] text-white'>
           <span className='text-3xl text-white mr-1'>
-            <img src={clglogo} alt='' className='h-[50px] w-[50px]' />
+            <img src={clglogo} alt='' className='h-[50px] w-[80px]' />
           </span>
-          MITS
+          SB MITS
         </div>
 
         <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-4 cursor-pointer md:hidden'>
