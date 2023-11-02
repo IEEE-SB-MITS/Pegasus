@@ -25,7 +25,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Hero />} /> */}
         <Route path="/hack" element={<Hack />} />
-        <Route path="/expo" element={<Expo />} />
+        <Route path="/" element={<Expo />} />
       
       </Routes>
     </div>
