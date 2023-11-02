@@ -1,14 +1,10 @@
 import "./App.css";
-import Homepage from "./homepage/Homepage";
 import "./index.css";
-import Navbar from "./common/Navbar";
-import styles from "./constants/style";
 import Hack from "./pages/hack";
 import HackNav from "./common/HackNav";
 import Expo from "./pages/expo/expo";
 
 import {Routes,Route} from 'react-router-dom'
-import Hero from "./homepage/Homepage";
 function App() {
   return (
     // <div className="App h-[95vh] md:h-screen lg:h-screen">

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "../../constants/style";
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 import {
   logo,
   ball,
@@ -12,7 +12,7 @@ import {
   viceChair,
   ann,
 } from "../../assets";
-import TimelineElement from "./timeline";
+// import TimelineElement from "./timeline";
 import Timeline from "./timeline";
 
 

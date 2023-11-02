@@ -5,7 +5,7 @@ import {
   logo,
   ball,
 //   aboutusImg,
-  person,
+  // person,
   call,
   mail,
   chair,
@@ -15,8 +15,8 @@ import {
   joana,
 } from "../../assets";
 
-import Globe from "../../common/globe";
-import Timeline from "../hack/timeline.js";
+// import Globe from "../../common/globe";
+// import Timeline from "../hack/timeline.js";
 
 const Expo = () => {
   useEffect(() => {
