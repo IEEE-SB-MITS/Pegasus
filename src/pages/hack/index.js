@@ -16,28 +16,28 @@ import {
 import Timeline from "./timeline";
 
 
-const events = [
-  {
-    year: 2000,
-    description: 'Event 1',
-  },
-  {
-    year: 2005,
-    description: 'Event 2',
-  },
-  {
-    year: 2010,
-    description: 'Event 3',
-  },
-  {
-    year: 2015,
-    description: 'Event 4',
-  },
-  {
-    year: 2020,
-    description: 'Event 5',
-  },
-];
+// const events = [
+//   {
+//     year: 2000,
+//     description: 'Event 1',
+//   },
+//   {
+//     year: 2005,
+//     description: 'Event 2',
+//   },
+//   {
+//     year: 2010,
+//     description: 'Event 3',
+//   },
+//   {
+//     year: 2015,
+//     description: 'Event 4',
+//   },
+//   {
+//     year: 2020,
+//     description: 'Event 5',
+//   },
+// ];
 
 
 const Hack = () => {

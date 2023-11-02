@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { clglogo } from '../assets';
 import styles from '../constants/style';
-import { Link, Element } from 'react-scroll'; // Import Link and Element
+import { Link } from 'react-scroll'; // Import Link and Element
 
 const HackNav = () => {
   let Links = [
