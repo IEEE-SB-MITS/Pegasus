@@ -16,6 +16,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 
 body {
@@ -24,14 +25,159 @@ body {
   background: linear-gradient( #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%);
 
   color: white;
-
+  
   /* Additional CSS properties go here */
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
+:root {
+  --x: 45deg; /* Set the initial value of --x */
+}
 
-/* .App {
- /* display: flex;
- justify-content: center;
-  align-items: center; */
-  /* flex-direction: column; */
+ #myRegBtn{
+  position: relative;
+  width: 250px;
+  height: 85px;
+  display: inline-block;
+  border-radius: 5px;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    height: 55px;
+    
+  }
+
+  }
+  #myRegBtn i{
+      position: absolute;
+      inset: -2px;
+      display: block;
+      border-radius: 5px;
+  }
+  #myRegBtn i,
+  #myRegBtn i:nth-child(2){
+      background: linear-gradient(var(--x),#00ccff,#1F0120,#1F0120,#d400d4);
+  }
+  #myRegBtn i:nth-child(2){
+      filter:blur(10px)
+  }
+  #myRegBtn span{
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase ;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+      border: 1px solid #040a29;
+      border-radius: 3px;
+      background: rgba(14,21,56,0.65);
+      overflow: hidden;
+
+  }
+
+  #myRegBtn span::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 100%;
+      height: 100%;
+     transform: skew(var(--x));
+      background: rgba(255,255,255,0.075);
+  }
+  .spinner{
+    -webkit-animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+  }
+
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+
+.card{
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  border:  2px solid white;
+  position: relative;
+
+}
+
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+
+}
+
+.card-body{
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background:#1f012055;
+  /* backdrop-filter: blur(5px); */
+  border-radius: 15px;
+  color:white;
+  padding:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+}
+.card:hover .card-body{
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-title{
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Lato';
+  line-height: 50px;
+}
+
+.card-sub-title{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-infor{
+  font-size: 16px;
+  line-height: 25px;
+  margin:40px 0;
+  font-weight: 300;
+}
+
+.card-button{
+  background-color: #c100c47e;
+  text-transform: capitalize;
+  outline: none;
+  border:none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 20px
+  
+
+  
+}
 

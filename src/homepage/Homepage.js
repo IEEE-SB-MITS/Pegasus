@@ -1,7 +1,10 @@
 import styles from "../constants/style";
 import { logo } from "../assets";
+import { motion } from "framer-motion";
+import {useMediaQuery} from '@react-hook/media-query';
 
 const Hero = () => {
+  const isSmallScreen = useMediaQuery('(max-width: 640px)');
   return (
     <>
       <section
@@ -62,26 +65,36 @@ const Hero = () => {
         <GetStarted />
       </div> */}
       </section>
-      <div className="lg:flex lg:justify-center lg:p-0 px-6 ">
-        <div
-          className="mybtn lg:m-0  my-10"
-          style={{
-            backgroundImage:
-              "linear-gradient(144deg, #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%)",
-          }}
-        >
+      <div className="lg:flex lg:justify-cenert lg:p-0 px-6 ">
+      <motion.div
+      animate={
+        isSmallScreen
+          ? { y: 120 }
+          :{ x: -100 }
+      }
+      className="mybtn lg:m-0 my-10"
+      style={{
+        backgroundImage:
+          "linear-gradient(-144deg, #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%)",
+      }}
+    >
           EXPO
-        </div>
+        </motion.div>
 
-        <div
-          className="mybtn lg:m-0 my-10"
-          style={{
-            backgroundImage:
-              "linear-gradient(-144deg, #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%)",
-          }}
-        >
+        <motion.div
+      animate={
+        isSmallScreen
+          ? { y: -120 }
+          :{ x: 100 }
+      }
+      className="mybtn lg:m-0 my-10"
+      style={{
+        backgroundImage:
+          "linear-gradient(-144deg, #180719 -5.79%, #210022 20.26%, #67122B 97.19%, #000 121.39%)",
+      }}
+    >
           HACK
-        </div>
+        </motion.div>
       </div>
 
       <div className="lg:hidden md:hidden block my-5 mx-10">
