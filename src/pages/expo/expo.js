@@ -197,11 +197,11 @@ const Expo = () => {
           />
        <div className="h-full w-full flex flex-col justify-center">
         <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center">
-          <img src={devfolio} alt="Devfolio" className="h-[10%] md:h-[20%] my-7 md:my-0 mx-7"/>
-          <img src={replit} alt="Replit" className="h-[15%] md:h-[28%] my-7 md:my-0 mx-7" />
+          <img src={devfolio} alt="Devfolio_Logo-White" className="h-[10%] md:h-[20%] my-7 md:my-0 mx-7"/>
+          <img src={replit} alt="logo-light-text-bg" className="h-[15%] md:h-[28%] my-7 md:my-0 mx-7" />
         </div>
         <div className="flex h-1/4 w-full items-start justify-center">
-          <img src={polygon} alt="Polygon" className="h-[20%] md:h-[40%]"/>
+          <img src={polygon} alt="Polygon_Logo-White" className="h-[20%] md:h-[40%]"/>
         </div>
        </div>
        </div>
