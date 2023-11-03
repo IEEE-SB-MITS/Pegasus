@@ -8,15 +8,94 @@ import {
   // person,
   call,
   mail,
-  chair,
-  viceChair,
-  ann,
+  
   aboutusImg,
-  joana,
 } from "../../assets";
+import  chair  from "../../assets/akshay.jpg";
+import  viceChair from "../../assets/vicechair.jpg";
+import ann from "../../assets/annsara.jpg"
+import joana from "../../assets/joana.jpg"
+import BHAGYARAJ_N from "../../assets/BHAGYARAJ_N.jpg"
+import ContactCard from "../../constants/card";
+import parthiv from "../../assets/parhiv.jpg"
+import Timeline from "../../constants/Timeline";
 
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
+
+const timedata = [
+  {
+    eventname: "4th Nov: Application starting"
+  },
+  {
+    eventname: "14th Nov: Application closint"
+  },
+  {
+    eventname: "20th Nov: Shortlisting Results"
+  },
+  {
+    eventname: "24th Nov: Event Starts"
+  },
+  {
+    eventname: "25th Nov: Event ends"
+  },
+  {
+    eventname: "4th Nov: Application starting"
+  },
+
+]
+
+const peopleData = [
+  {
+    img: chair,
+    name: 'Akshay Sanjeev',
+    position: 'chair',
+    number: '9995979041',
+    mail: 'akshaysanjeev10@gmail.com',
+  },
+  {
+    img: ann,
+    name: 'Ann Sara Baby',
+    position: 'secretary',
+    number: '9400598729',
+    mail: 'annsarababy@ieee.org',
+  },
+  
+
+];
+const peopleData1 = [
+  {
+    img: viceChair,
+    name: 'Karthik U',
+    position: 'EXPO event coodinator',
+    number: '8281628198',
+    mail: 'karthiku@ieee.org',
+  },
+ 
+  {
+    img: joana,
+    name: 'JOANNA MERINE NOBLE',
+    position: 'EXPO event coodinator',
+    number: '8137042277',
+    mail: 'someone@example.com',
+  },
+  {
+    img: BHAGYARAJ_N,
+    name: 'bhagyaraj n',
+    position: 'HACK event coodinator',
+    number: '987-654-3210',
+    mail: 'brnbhagyaraj@gmail.com',
+  },
+  {
+    img: parthiv,
+    name: 'parthiv s',
+    position: 'HACK event coodinator',
+    number: '8943462638',
+    mail: 'jane@example.com',
+  },
+
+];
+
 
 const Expo = () => {
   useEffect(() => {
@@ -35,6 +114,22 @@ const Expo = () => {
         myBtn.removeEventListener("mousemove", mousemoveHandler);
       };
     }
+  }, []);
+
+  useEffect(() => {
+    // Create a script element
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+
+    // Append the script to the document body
+    document.body.appendChild(script);
+
+    // Clean up by removing the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -89,7 +184,7 @@ const Expo = () => {
           >
             <h1 className="text-3xl font-bold text-center">About the Event</h1>
             <div className="my-6 md:px-6  md:text-xl text-sm text-justify">
-            Introducing Pegasus 2.0, presented by 𝗜𝗘𝗘𝗘 𝗦𝗕 𝗠𝗜𝗧𝗦 in partnership with IEEE RAS Kerala Chapter and IEEE Council on RFID Kerala Session. Prepare for an exceptional project expo where the boundaries of innovation are pushed to the limit.
+            Introducing Pegasus 2.0, presented by 𝗜𝗘𝗘𝗘 𝗦𝗕 𝗠𝗜𝗧𝗦 in partnership with IEEE RAS Kerala Chapter and IEEE Council on RFID Kerala Section. Prepare for an exceptional project expo where the boundaries of innovation are pushed to the limit.
              {" "}
             </div>
           </div>
@@ -100,19 +195,24 @@ const Expo = () => {
 
 
 
-{/*       
-      <section className={`h-screen ${styles.expoColor} ${styles.flexCenter} relative`} id="section3">
-        <Timeline/>
-      </section> */}
+      
+      <section className={`h-screen ${styles.expoColor} ${styles.flexCenter} flex-col relative`} id="section3">
+        <div className="event-heading">TIMELINE</div>
+        <Timeline eventname= "event starting"/>
+      </section>
       {/* <section className="h-screen bg-yellow-900">
-        <div>
-          <h1>Gallery</h1>
-        </div>
+      <div 
+              class="apply-button" 
+              data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+              data-button-theme="light"
+              style={{height: "44px", width: "312px"}}
+            ></div>
       </section> */}
       <section
         className={`md:h-screen lg:h-screen h-[200vh] ${styles.expoColor}`}
         id="section5"
       >
+        <div>
         <div className="w-full flex flex-col justify-center items-center md:pt-10">
           <h1 className="text-2xl font-bold">Contact Us</h1>
           <div className="lg:hidden text-xl">
@@ -120,110 +220,33 @@ const Expo = () => {
           </div>
         </div>
         <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
-          <div className="card mx-10 my-10">
-            <img src={chair} className="card-img" alt="" />
-            <div className={`card-body p-4`}>
-              <h1 className="card-title pt-4">Akshay sanjeev</h1>
-              <p className="card-sub-title">chair</p>
-              <div className="w-full h-full flex flex-row items-center justify-center">
-                <a href="tel:+919995979041" className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-                  <img
-                    src={call}
-                    alt=""
-                    className="w-[30%]"
-                    style={{ filter: "invert(20)" }}
-                  />
-                </a>
-                <a href="mailto:akshaysanjeev10@gmail.com" className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-                  <img
-                    src={mail}
-                    alt=""
-                    className={`w-[30%] `}
-                    style={{ filter: "invert(20)" }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card mx-10 my-10">
-            <img src={viceChair} className="card-img" alt="" />
-            <div className={`card-body `}>
-              <h1 className="card-title " style={{ lineHeight: "70px" }}>
-                karthik u
-              </h1>
-              <p className="card-sub-title">vice-chair</p>
-              <div className="w-full h-full flex flex-row items-center justify-center">
-                <a href="tel:+918281628198" className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-                  <img
-                    src={call}
-                    alt=""
-                    className="w-[30%]"
-                    style={{ filter: "invert(20)" }}
-                  />
-                </a>
-                <a href="mailto:karthikadoor20@gmail.com" className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-                  <img
-                    src={mail}
-                    alt=""
-                    className={`w-[30%] `}
-                    style={{ filter: "invert(20)" }}
-                  />
-                  
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card mx-10 my-10">
-            <img src={ann} className="card-img" alt="" />
-            <div className={`card-body p-4`}>
-              <h1 className="card-title">ann sara baby</h1>
-              <p className="card-sub-title">Secretary</p>
-              <div className="w-full h-full flex flex-row items-center justify-center">
-                <a href="tel:+919400538729" className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-                  <img
-                    src={call}
-                    alt=""
-                    className="w-[30%]"
-                    style={{ filter: "invert(20)" }}
-                  />
-                </a>
-                <a href="mailto:annsarababy@ieee.org" className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-                  <img
-                    src={mail}
-                    alt=""
-                    className={`w-[30%] `}
-                    style={{ filter: "invert(20)" }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="card mx-10 my-10">
-            <img src={joana} className="card-img" alt="" />
-            <div className={`card-body ${styles.flexCenter} p-4`}>
-              <h1 className="card-title">JOANNA MERINE NOBLE
-</h1>
-              <p className="card-sub-title">Event Coordinator</p>
-              <div className="w-full h-full flex flex-row items-center justify-center">
-                <a href="tel:+918137042277" className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-                  <img
-                    src={call}
-                    alt=""
-                    className="w-[30%]"
-                    style={{ filter: "invert(20)" }}
-                  />
-                </a>
-                <div className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-                  <img
-                    src={mail}
-                    alt=""
-                    className={`w-[30%] `}
-                    style={{ filter: "invert(20)" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* cards */}
+          {peopleData.map((person, index) => (
+                <ContactCard
+                  key={index}
+                  img={person.img}
+                  name={person.name}
+                  position={person.position}
+                  number={person.number}
+                  mail={person.mail}
+                />
+              ))}
+          
+        </div>
+        <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
+          {/* cards */}
+          {peopleData1.map((person, index) => (
+                <ContactCard
+                  key={index}
+                  img={person.img}
+                  name={person.name}
+                  position={person.position}
+                  number={person.number}
+                  mail={person.mail}
+                />
+              ))}
+          
+        </div>
         </div>
       </section>
       <section className={`h-[20vh] w-full ${styles.expoColor}`}   ></section>
