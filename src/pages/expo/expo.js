@@ -92,6 +92,17 @@ const Expo = () => {
         myBtn.removeEventListener("mousemove", mousemoveHandler);
       };
     }
+
+    // Load the Devfolio script here
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
 
@@ -118,8 +129,8 @@ const Expo = () => {
             <div id="logo">
               <img src={logo} alt="logo" className="" />
             </div>
-            <div id="text" className="text-center my-3">
-              <h1 className="text-6xl font-bold">EXPO</h1>
+            <div id="text" className="text-center my-5">
+              <h1 className="md:text-5xl text-3xl font-bold">THE EXPO <span className="text-red-500 flex md:inline-block md:flex-none justify-center">&</span> HACKATHON</h1>
             </div>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNyLyP_ZdXLlohgDXZWKi8IWcG7CXCWOUCbd-LENOscQIc-w/viewform?usp=sf_link" id="myRegBtn" className="m-6">
               <i></i>
@@ -127,6 +138,13 @@ const Expo = () => {
               <span>REGISTER</span>
             </a>
           </div>
+
+          <div
+        className="apply-button bg-white "
+        data-hackathon-slug="YOUR-HACKATHON-SLUG"
+        data-button-theme="dark"
+        style={{ height: '444px', width: '312px' }}
+      > hello</div>
         </div>
        
       </section>
@@ -148,7 +166,7 @@ const Expo = () => {
             className="w-1/2 h-full md:p-10 p-0 flex flex-col justify-center"
           >
             <h1 className="text-3xl font-bold text-center">About the Event</h1>
-            <div className="my-6 md:px-6  md:text-xl text-sm text-justify">
+            <div className="my-6 md:px-6 px-0 md:text-lg text-sm text-justify">
             Introducing Pegasus 2.0, presented by 𝗜𝗘𝗘𝗘 𝗦𝗕 𝗠𝗜𝗧𝗦 in partnership with IEEE RAS Kerala Chapter and IEEE Council on RFID Kerala Section. Prepare for an exceptional project expo where the boundaries of innovation are pushed to the limit.
              {" "}
             </div>
@@ -164,10 +182,21 @@ const Expo = () => {
       
       <section className={`h-screen ${styles.expoColor} ${styles.flexCenter} flex-col relative`} id="section3">
         <div className="event-heading mb-10">TIMELINE</div>
-        <Timeline eventname= "event starting"/>
+        <Timeline />
       </section>
       <section className={`h-screen ${styles.expoColor} flex  flex-col items-center`}>
         <h1 className="event-heading">OUR SPONSORS</h1>
+        <div className="relative h-full w-full px-10 md:p-0 lg:p-0 overflow-hidden">
+          <img
+            src={ball}
+            alt=""
+            className="absolute h-[40%] md:h-full lg:h-3/5 -top-5 -right-12 spinner"
+          />
+          <img
+            src={ball}
+            alt=""
+            className="absolute h-[40%] md:h-1/2 lg:h-[60%]  -left-10 bottom-4 spinner"
+          />
        <div className="h-full w-full flex flex-col justify-center">
         <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center">
           <img src={devfolio} alt="" className="h-[10%] md:h-[20%] my-7 md:my-0 mx-7"/>
@@ -176,6 +205,7 @@ const Expo = () => {
         <div className="flex h-1/4 w-full items-start justify-center">
           <img src={polygon} alt="" className="h-[20%] md:h-[40%]"/>
         </div>
+       </div>
        </div>
       </section>
       <section
@@ -221,7 +251,8 @@ const Expo = () => {
       </section>
       <section className={`h-[20vh] w-full ${styles.expoColor}`}   >
       </section>
-    </div>
+
+       </div>
   );
 };
 

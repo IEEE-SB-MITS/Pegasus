@@ -8,7 +8,7 @@ const HackNav = () => {
     { name: 'HOME', link: 'section1' },
     { name: 'TIMELINE', link: 'section3' },
     { name: 'ABOUT', link: 'section2' },
-    { name: 'GALLERY', link: 'section4' },
+    { name: 'SPONSORS', link: 'section4' },
     { name: 'CONTACT', link: 'section5' },
   ];
 
