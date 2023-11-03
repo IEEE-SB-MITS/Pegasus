@@ -3,12 +3,7 @@ import styles from "../../constants/style";
 // import { motion, AnimatePresence } from 'framer-motion';
 import {
   logo,
-  ball,
-//   aboutusImg,
-  // person,
-  call,
-  mail,
-  
+  ball,  
   aboutusImg,
 } from "../../assets";
 import  chair  from "../../assets/akshay.jpg";
@@ -23,27 +18,7 @@ import Timeline from "../../constants/Timeline";
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
 
-const timedata = [
-  {
-    eventname: "4th Nov: Application starting"
-  },
-  {
-    eventname: "14th Nov: Application closint"
-  },
-  {
-    eventname: "20th Nov: Shortlisting Results"
-  },
-  {
-    eventname: "24th Nov: Event Starts"
-  },
-  {
-    eventname: "25th Nov: Event ends"
-  },
-  {
-    eventname: "4th Nov: Application starting"
-  },
 
-]
 
 const peopleData = [
   {
