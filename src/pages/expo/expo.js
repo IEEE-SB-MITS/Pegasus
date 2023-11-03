@@ -12,11 +12,13 @@ import ann from "../../assets/annsara.jpg"
 import joana from "../../assets/joana.jpg"
 import BHAGYARAJ_N from "../../assets/BHAGYARAJ_N.jpg"
 import ContactCard from "../../constants/card";
+
 import parthiv from "../../assets/parhiv.jpg"
 import Timeline from "../../constants/Timeline";
 import devfolio from "../../assets/Devfolio/Devfolio_Logo-White.svg"
 import replit from "../../assets/Replit/logo-light-text-bg.svg"
 import polygon from "../../assets/Polygon/Polygon_Logo-White.svg"
+import Devbutton from "../../common/Devbutton";
 
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
@@ -137,14 +139,10 @@ const Expo = () => {
               <i></i>
               <span>REGISTER</span>
             </a>
+      <Devbutton/> 
+       
           </div>
-
-          <div
-        className="apply-button bg-white "
-        data-hackathon-slug="YOUR-HACKATHON-SLUG"
-        data-button-theme="dark"
-        style={{ height: '444px', width: '312px' }}
-      > hello</div>
+         
         </div>
        
       </section>
