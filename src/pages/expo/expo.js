@@ -3,7 +3,7 @@ import styles from "../../constants/style";
 // import { motion, AnimatePresence } from 'framer-motion';
 import {
   logo,
-  ball,  
+  ball,   
   aboutusImg,
 } from "../../assets";
 import  chair  from "../../assets/akshay.jpg";
@@ -14,6 +14,9 @@ import BHAGYARAJ_N from "../../assets/BHAGYARAJ_N.jpg"
 import ContactCard from "../../constants/card";
 import parthiv from "../../assets/parhiv.jpg"
 import Timeline from "../../constants/Timeline";
+import devfolio from "../../assets/Devfolio/Devfolio_Logo-White.svg"
+import replit from "../../assets/Replit/logo-light-text-bg.svg"
+import polygon from "../../assets/Polygon/Polygon_Logo-White.svg"
 
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
@@ -25,7 +28,7 @@ const peopleData = [
     img: chair,
     name: 'Akshay Sanjeev',
     position: 'chair',
-    number: '9995979041',
+    number: ' ',
     mail: 'akshaysanjeev10@gmail.com',
   },
   {
@@ -91,21 +94,7 @@ const Expo = () => {
     }
   }, []);
 
-  useEffect(() => {
-    // Create a script element
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
 
-    // Append the script to the document body
-    document.body.appendChild(script);
-
-    // Clean up by removing the script when the component unmounts
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <div id="maindiv">
@@ -139,6 +128,7 @@ const Expo = () => {
             </a>
           </div>
         </div>
+       
       </section>
 
       <section
@@ -164,6 +154,7 @@ const Expo = () => {
             </div>
           </div>
         </div>
+        
       </section>
 
 
@@ -172,26 +163,30 @@ const Expo = () => {
 
       
       <section className={`h-screen ${styles.expoColor} ${styles.flexCenter} flex-col relative`} id="section3">
-        <div className="event-heading">TIMELINE</div>
+        <div className="event-heading mb-10">TIMELINE</div>
         <Timeline eventname= "event starting"/>
       </section>
-      {/* <section className="h-screen bg-yellow-900">
-      <div 
-              class="apply-button" 
-              data-hackathon-slug="YOUR-HACKATHON-SLUG" 
-              data-button-theme="light"
-              style={{height: "44px", width: "312px"}}
-            ></div>
-      </section> */}
+      <section className={`h-screen ${styles.expoColor} flex  flex-col items-center`}>
+        <h1 className="event-heading">OUR SPONSORS</h1>
+       <div className="h-full w-full flex flex-col justify-center">
+        <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center">
+          <img src={devfolio} alt="" className="h-[10%] md:h-[20%] my-7 md:my-0 mx-7"/>
+          <img src={replit} alt="" className="h-[15%] md:h-[28%] my-7 md:my-0 mx-7" />
+        </div>
+        <div className="flex h-1/4 w-full items-start justify-center">
+          <img src={polygon} alt="" className="h-[20%] md:h-[40%]"/>
+        </div>
+       </div>
+      </section>
       <section
         className={`md:h-screen lg:h-screen h-[200vh] ${styles.expoColor}`}
         id="section5"
       >
         <div>
         <div className="w-full flex flex-col justify-center items-center md:pt-10">
-          <h1 className="text-2xl font-bold">Contact Us</h1>
-          <div className="lg:hidden text-xl">
-            Tap the card to contact
+          <h1 className="text-4xl event-heading">Contact Us</h1>
+          <div className="lg:hidden text-md">
+            ( Tap the card to contact )
           </div>
         </div>
         <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
@@ -224,7 +219,8 @@ const Expo = () => {
         </div>
         </div>
       </section>
-      <section className={`h-[20vh] w-full ${styles.expoColor}`}   ></section>
+      <section className={`h-[20vh] w-full ${styles.expoColor}`}   >
+      </section>
     </div>
   );
 };
