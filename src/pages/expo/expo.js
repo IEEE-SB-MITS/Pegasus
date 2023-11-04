@@ -15,6 +15,7 @@ import Timeline from "../../constants/Timeline";
 import ras from "../../assets/RAS CHAPTER.svg";
 import keralasec from "../../assets/kerala-section.svg";
 import crfid from "../../assets/rfid.svg";
+import Marquee from "react-fast-marquee";
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
 
@@ -156,7 +157,7 @@ const Expo = () => {
       </section>
 
       <section
-        className={`h-screen ${styles.expoColor} animate-section`}
+        className={`h-screen ${styles.expoColor} animate-section relative`}
         id="section2"
       >
         <div className="h-full w-full flex flex-col md:flex-row md:justify-evenly justify-center items-center relative">
@@ -180,13 +181,18 @@ const Expo = () => {
             </div>
           </div>
         </div>
+        <div className="md:hidden lg:hidden absolute bottom-48 text-3xl text-pink-600 font-mono">
+        <Marquee > -  DON'T FORGET TO REGISTER BEFORE 14TH OF NOVEMBER - 
+          </Marquee>
+          </div>
+        
       </section>
 
       <section
         className={`h-screen ${styles.expoColor} ${styles.flexCenter} overflow-auto flex-col relative`}
         id="section3"
       >
-        <div className="event-heading mb-7">TIMELINE</div>
+        <div className="text-5xl font-[Georgia] md:mb-7 mb-32">TIMELINE</div>
         <div className="relative h-full w-full px-10 md:p-0 lg:p-0 ">
           <img
             src={ball}
@@ -202,37 +208,52 @@ const Expo = () => {
         </div>
       </section>
       <section
-        className={`h-screen ${styles.expoColor} flex  flex-col items-center`}
+        className={`md:h-screen h-1/4 ${styles.expoColor} flex  flex-col items-center`}
       >
         <h1 className="event-heading">OUR PATNERS</h1>
+        
         <div className="relative h-full w-full px-10 md:p-0 lg:p-0 overflow-hidden">
-          <img
-            src={ball}
-            alt=""
-            className="absolute h-[40%] md:h-full lg:h-3/5 -top-5 -right-12 spinner md:hidden lg:hidden"
-          />
-          <img
-            src={ball}
-            alt=""
-            className="absolute h-[40%] md:h-1/2 lg:h-[60%]  -left-10 bottom-4 spinner md:hidden lg:hidden"
-          />
+     
+        
           <div className="h-full w-full flex flex-col justify-center">
             <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center ">
+              
+              <div className="md:hidden lg:hidden ">
+                <Marquee direction="left">
               <img
                 src={keralasec}
                 alt="RAS LOGO"
-                className="h-[10%] md:h-[30%] my-20 md:my-0 mx-7"
+                className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7"
               />
               <img
                 src={crfid}
                 alt="IEEE Kerala section LOGO"
-                className="h-[15%] md:h-[35%] my-20 md:my-0 mx-7"
+                className="h-[50px] md:h-[35%] my-20 md:my-0 mx-7"
               />
               <img
                 src={ras}
                 alt="CRFID LOGO"
-                className="h-[20%] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
+                className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
               />
+              </Marquee>
+              </div>
+              <div className="hidden md:flex lg:flex h-full w-full md:justify-center md:items-center">
+              <img
+                src={keralasec}
+                alt="RAS LOGO"
+                className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7"
+              />
+              <img
+                src={crfid}
+                alt="IEEE Kerala section LOGO"
+                className="h-[50px] md:h-[35%] my-20 md:my-0 mx-7"
+              />
+              <img
+                src={ras}
+                alt="CRFID LOGO"
+                className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
+              />
+              </div>
             </div>
             <div className="hidden md:flex h-1/4 w-full items-start justify-center">
               <img src={ras} alt="CRFID LOGO" className="h-[20%] md:h-[30%]" />
