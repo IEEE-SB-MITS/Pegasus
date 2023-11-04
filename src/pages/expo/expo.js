@@ -210,7 +210,7 @@ const Expo = () => {
       <section
         className={`md:h-screen h-1/4 ${styles.expoColor} flex  flex-col items-center`}
       >
-        <h1 className="event-heading">OUR PATNERS</h1>
+        <h1 className="event-heading">OUR PARTNERS</h1>
         
         <div className="relative h-full w-full px-10 md:p-0 lg:p-0 overflow-hidden">
      
