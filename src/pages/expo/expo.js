@@ -72,8 +72,8 @@ const peopleDataHack = [
     img: basil,
     name: "basil thankachan",
     position: "HACK event coodinator",
-    number: "8943462638",
-    mail: "jane@example.com",
+    number: "9562951685",
+    mail: "basilthankachan861@gmail.com",
   },
   
 
