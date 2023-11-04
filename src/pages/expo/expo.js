@@ -14,7 +14,6 @@ import Timeline from "../../constants/Timeline";
 import devfolio from "../../assets/Devfolio/Devfolio_Logo-White.svg";
 import replit from "../../assets/Replit/logo-light-text-bg.svg";
 import polygon from "../../assets/Polygon/Polygon_Logo-White.svg";
-import Devbutton from "../../common/Devbutton";
 
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
