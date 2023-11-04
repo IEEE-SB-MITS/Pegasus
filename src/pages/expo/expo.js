@@ -183,11 +183,11 @@ const Expo = () => {
       </section>
 
       <section
-        className={`h-screen ${styles.expoColor} ${styles.flexCenter} flex-col relative`}
+        className={`h-screen ${styles.expoColor} ${styles.flexCenter} overflow-auto flex-col relative`}
         id="section3"
       >
         <div className="event-heading mb-7">TIMELINE</div>
-        <div className="relative h-full w-full px-10 md:p-0 lg:p-0 overflow-hidden">
+        <div className="relative h-full w-full px-10 md:p-0 lg:p-0 ">
           <img
             src={ball}
             alt=""
