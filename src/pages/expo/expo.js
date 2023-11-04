@@ -181,7 +181,7 @@ const Expo = () => {
             </div>
           </div>
         </div>
-        <div className="md:hidden lg:hidden absolute bottom-48 text-3xl text-pink-600 font-mono">
+        <div className="md:hidden lg:hidden absolute bottom-32 text-3xl text-pink-600 font-mono">
         <Marquee > -  DON'T FORGET TO REGISTER BEFORE 14TH OF NOVEMBER - 
           </Marquee>
           </div>
@@ -189,7 +189,7 @@ const Expo = () => {
       </section>
 
       <section
-        className={`h-screen ${styles.expoColor} ${styles.flexCenter} overflow-auto flex-col relative`}
+        className={`h-screen ${styles.expoColor} ${styles.flexCenter} flex-col relative overflow-hidden`}
         id="section3"
       >
         <div className="text-5xl font-[Georgia] md:mb-7 mb-32">TIMELINE</div>
