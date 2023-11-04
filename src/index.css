@@ -135,7 +135,7 @@ body {
   /* backdrop-filter: blur(5px); */
   border-radius: 15px;
   color:white;
-  padding:40px;
+  padding:15px;
   display: flex;
   flex-direction: column;
   justify-content: center;

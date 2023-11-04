@@ -8,6 +8,7 @@ import ann from "../../assets/annsara.jpg";
 import joana from "../../assets/joana.jpg";
 import BHAGYARAJ_N from "../../assets/BHAGYARAJ_N.jpg";
 import ContactCard from "../../constants/card";
+import basil from "../../assets/basil.jpg"
 
 import parthiv from "../../assets/parhiv.jpg";
 import Timeline from "../../constants/Timeline";
@@ -34,7 +35,7 @@ const peopleData = [
     mail: "annsarababy@ieee.org",
   },
 ];
-const peopleData1 = [
+const peopleDataExpo = [
   {
     img: viceChair,
     name: "Karthik U",
@@ -50,11 +51,14 @@ const peopleData1 = [
     number: "8137042277",
     mail: "someone@example.com",
   },
+
+];
+const peopleDataHack = [
   {
     img: BHAGYARAJ_N,
     name: "bhagyaraj n",
     position: "HACK event coodinator",
-    number: "987-654-3210",
+    number: "7510231478",
     mail: "brnbhagyaraj@gmail.com",
   },
   {
@@ -64,6 +68,15 @@ const peopleData1 = [
     number: "8943462638",
     mail: "jane@example.com",
   },
+  {
+    img: basil,
+    name: "basil thankachan",
+    position: "HACK event coodinator",
+    number: "8943462638",
+    mail: "jane@example.com",
+  },
+  
+
 ];
 
 const Expo = () => {
@@ -248,7 +261,20 @@ const Expo = () => {
           </div>
           <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
             {/* cards */}
-            {peopleData1.map((person, index) => (
+
+            <div className="md:hidden lg:hidden">-- EXPO COORDINATORS --</div>
+            {peopleDataExpo.map((person, index) => (
+              <ContactCard
+              key={index}
+              img={person.img}
+              name={person.name}
+              position={person.position}
+              number={person.number}
+              mail={person.mail}
+              />
+              ))}
+            <div className="md:hidden lg:hidden">-- HACK COORDINATORS --</div>
+            {peopleDataHack.map((person, index) => (
               <ContactCard
                 key={index}
                 img={person.img}
