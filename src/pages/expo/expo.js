@@ -12,10 +12,9 @@ import basil from "../../assets/basil.jpg"
 
 import parthiv from "../../assets/parhiv.jpg";
 import Timeline from "../../constants/Timeline";
-import devfolio from "../../assets/Devfolio/Devfolio_Logo-White.svg";
-import replit from "../../assets/Replit/logo-light-text-bg.svg";
-import polygon from "../../assets/Polygon/Polygon_Logo-White.svg";
-
+import ras from "../../assets/RAS CHAPTER.svg"
+import keralasec from "../../assets/kerala-section.svg"
+import crfid from "../../assets/rfid.svg"
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
 
@@ -140,7 +139,7 @@ const Expo = () => {
                 HACKATHON
               </h1>
             </div>
-            <p>REGISTER HERE</p>
+            <p className="md:py-5"> REGISTER HERE </p>
           <div className="flex flex-col md:flex-row lg:flex-row">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSeNyLyP_ZdXLlohgDXZWKi8IWcG7CXCWOUCbd-LENOscQIc-w/viewform?usp=sf_link"
@@ -196,42 +195,59 @@ const Expo = () => {
         className={`h-screen ${styles.expoColor} ${styles.flexCenter} flex-col relative`}
         id="section3"
       >
-        <div className="event-heading mb-10">TIMELINE</div>
-        <Timeline />
-      </section>
-      <section
-        className={`h-screen ${styles.expoColor} flex  flex-col items-center`}
-      >
-        <h1 className="event-heading">OUR SPONSORS</h1>
+        <div className="event-heading mb-7">TIMELINE</div>
         <div className="relative h-full w-full px-10 md:p-0 lg:p-0 overflow-hidden">
           <img
             src={ball}
             alt=""
-            className="absolute h-[40%] md:h-full lg:h-3/5 -top-5 -right-12 spinner"
+            className="hidden md:block lg:block absolute h-[40%] md:h-full lg:h-3/5 -top-5 -right-12 spinner"
           />
           <img
             src={ball}
             alt=""
-            className="absolute h-[40%] md:h-1/2 lg:h-[60%]  -left-10 bottom-4 spinner"
+            className="hidden md:block lg:block absolute h-[40%] md:h-1/2 lg:h-[60%]  -left-10 bottom-4 spinner"
+          />
+        <Timeline />
+        </div>
+      </section>
+      <section
+        className={`h-screen ${styles.expoColor} flex  flex-col items-center`}
+      >
+        <h1 className="event-heading">OUR PATNERS</h1>
+        <div className="relative h-full w-full px-10 md:p-0 lg:p-0 overflow-hidden">
+          <img
+            src={ball}
+            alt=""
+            className="absolute h-[40%] md:h-full lg:h-3/5 -top-5 -right-12 spinner md:hidden lg:hidden"
+          />
+          <img
+            src={ball}
+            alt=""
+            className="absolute h-[40%] md:h-1/2 lg:h-[60%]  -left-10 bottom-4 spinner md:hidden lg:hidden"
           />
           <div className="h-full w-full flex flex-col justify-center">
-            <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center">
+            <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center ">
               <img
-                src={devfolio}
-                alt="DEVFOLIO LOGO"
-                className="h-[10%] md:h-[20%] my-7 md:my-0 mx-7"
+                src={keralasec}
+                alt="RAS LOGO"
+                className="h-[10%] md:h-[30%] my-20 md:my-0 mx-7"
               />
               <img
-                src={replit}
-                alt="REPLIT LOGO"
-                className="h-[15%] md:h-[28%] my-7 md:my-0 mx-7"
+                src={crfid}
+                alt="IEEE Kerala section LOGO"
+                className="h-[15%] md:h-[35%] my-20 md:my-0 mx-7"
+              />
+              <img
+                src={ras}
+                alt="CRFID LOGO"
+                className="h-[20%] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
               />
             </div>
-            <div className="flex h-1/4 w-full items-start justify-center">
+            <div className="hidden md:flex h-1/4 w-full items-start justify-center">
               <img
-                src={polygon}
-                alt="POLYGON LOGO"
-                className="h-[20%] md:h-[40%]"
+                src={ras}
+                alt="CRFID LOGO"
+                className="h-[20%] md:h-[30%]"
               />
             </div>
           </div>
