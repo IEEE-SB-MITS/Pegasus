@@ -31,7 +31,7 @@ const peopleData = [
     img: ann,
     name: "Ann Sara Baby",
     position: "secretary",
-    number: "9400598729",
+    number: "9400538729",
     mail: "annsarababy@ieee.org",
   },
 ];
