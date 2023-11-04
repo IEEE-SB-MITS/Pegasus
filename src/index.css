@@ -131,7 +131,7 @@ body {
   position: absolute;
   top: 0;
   right: -100%;
-  background:#1f012055;
+  background:#1f01207e;
   /* backdrop-filter: blur(5px); */
   border-radius: 15px;
   color:white;
@@ -148,7 +148,7 @@ body {
 }
 .card-title{
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 800;
   font-family: 'Lato';
   line-height: 50px;

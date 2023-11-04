@@ -1,22 +1,23 @@
 import React, { useEffect } from "react";
 import styles from "../../constants/style";
 // import { motion, AnimatePresence } from 'framer-motion';
-import { logo, ball, aboutusImg } from "../../assets";
+import { logo, ball, aboutusImg, mail, call } from "../../assets";
 import chair from "../../assets/akshay.jpg";
 import viceChair from "../../assets/vicechair.jpg";
 import ann from "../../assets/annsara.jpg";
 import joana from "../../assets/joana.jpg";
 import BHAGYARAJ_N from "../../assets/BHAGYARAJ_N.jpg";
 import ContactCard from "../../constants/card";
-import basil from "../../assets/basil.jpg"
+import basil from "../../assets/basil.jpg";
 
 import parthiv from "../../assets/parhiv.jpg";
 import Timeline from "../../constants/Timeline";
-import ras from "../../assets/RAS CHAPTER.svg"
-import keralasec from "../../assets/kerala-section.svg"
-import crfid from "../../assets/rfid.svg"
+import ras from "../../assets/RAS CHAPTER.svg";
+import keralasec from "../../assets/kerala-section.svg";
+import crfid from "../../assets/rfid.svg";
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
+
 
 const peopleData = [
   {
@@ -50,32 +51,22 @@ const peopleDataExpo = [
     number: "8137042277",
     mail: "someone@example.com",
   },
-
 ];
 const peopleDataHack = [
   {
     img: BHAGYARAJ_N,
     name: "bhagyaraj n",
-    position: "HACK event coodinator",
+    position: "Hackathon Event Coordinator",
     number: "7510231478",
     mail: "brnbhagyaraj@gmail.com",
   },
   {
     img: parthiv,
     name: "parthiv s",
-    position: "HACK event coodinator",
+    position: "Hackathon Event Coordinator",
     number: "8943462638",
     mail: "jane@example.com",
   },
-  {
-    img: basil,
-    name: "basil thankachan",
-    position: "HACK event coodinator",
-    number: "9562951685",
-    mail: "basilthankachan861@gmail.com",
-  },
-  
-
 ];
 
 const Expo = () => {
@@ -140,25 +131,25 @@ const Expo = () => {
               </h1>
             </div>
             <p className="md:py-5"> REGISTER HERE </p>
-          <div className="flex flex-col md:flex-row lg:flex-row">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeNyLyP_ZdXLlohgDXZWKi8IWcG7CXCWOUCbd-LENOscQIc-w/viewform?usp=sf_link"
-              id="myRegBtn"
-              className="m-6"
-            >
-              <i></i>
-              <i></i>
-              <span>EXPO</span>
-            </a>
-            <a
-              href="https://unstop.com/o/fz90XMt?lb=IvoS6d15"
-              id="myRegBtn"
-              className="m-6"
-            >
-              <i></i>
-              <i></i>
-              <span>HACK</span>
-            </a>
+            <div className="flex flex-col md:flex-row lg:flex-row">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeNyLyP_ZdXLlohgDXZWKi8IWcG7CXCWOUCbd-LENOscQIc-w/viewform?usp=sf_link"
+                id="myRegBtn"
+                className="m-6"
+              >
+                <i></i>
+                <i></i>
+                <span>EXPO</span>
+              </a>
+              <a
+                href="https://unstop.com/o/fz90XMt?lb=IvoS6d15"
+                id="myRegBtn"
+                className="m-6"
+              >
+                <i></i>
+                <i></i>
+                <span>HACK</span>
+              </a>
             </div>
           </div>
         </div>
@@ -207,7 +198,7 @@ const Expo = () => {
             alt=""
             className="hidden md:block lg:block absolute h-[40%] md:h-1/2 lg:h-[60%]  -left-10 bottom-4 spinner"
           />
-        <Timeline />
+          <Timeline />
         </div>
       </section>
       <section
@@ -244,11 +235,7 @@ const Expo = () => {
               />
             </div>
             <div className="hidden md:flex h-1/4 w-full items-start justify-center">
-              <img
-                src={ras}
-                alt="CRFID LOGO"
-                className="h-[20%] md:h-[30%]"
-              />
+              <img src={ras} alt="CRFID LOGO" className="h-[20%] md:h-[30%]" />
             </div>
           </div>
         </div>
@@ -281,14 +268,14 @@ const Expo = () => {
             <div className="md:hidden lg:hidden">-- EXPO COORDINATORS --</div>
             {peopleDataExpo.map((person, index) => (
               <ContactCard
-              key={index}
-              img={person.img}
-              name={person.name}
-              position={person.position}
-              number={person.number}
-              mail={person.mail}
+                key={index}
+                img={person.img}
+                name={person.name}
+                position={person.position}
+                number={person.number}
+                mail={person.mail}
               />
-              ))}
+            ))}
             <div className="md:hidden lg:hidden">-- HACK COORDINATORS --</div>
             {peopleDataHack.map((person, index) => (
               <ContactCard
@@ -300,6 +287,39 @@ const Expo = () => {
                 mail={person.mail}
               />
             ))}
+            <div className="card mx-10 my-10">
+              <img src={basil} className="card-img" alt="" />
+              <div className="card-body p-4">
+                <h1 className={` pt-4`}>
+                  <span className="text-[45px] ">BASIL</span> <span className="text-[1.85rem] font-normal capitalize">THANKACHAN</span>
+                </h1>
+                <p className="card-sub-title w-1/2">Hackathon Event Coordinator</p>
+                <div className="w-full h-full flex flex-row items-center justify-center">
+                  <a
+                    href={`tel:9562951685`}
+                    className="card-button mx-4 py-4 w-[35%] flex items-center justify-center"
+                  >
+                    <img
+                      src={call}
+                      alt=""
+                      className="w-[30%]"
+                      style={{ filter: "invert(20)" }}
+                    />
+                  </a>
+                  <a
+                    href={`mailto:basilthankachan861@gmail.com`}
+                    className="card-button mx-4 py-4 w-[35%] flex items-center justify-center"
+                  >
+                    <img
+                      src={mail}
+                      alt=""
+                      className="w-[30%]"
+                      style={{ filter: "invert(20)" }}
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
