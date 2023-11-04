@@ -25,7 +25,7 @@ const peopleData = [
     img: chair,
     name: "Akshay Sanjeev",
     position: "chair",
-    number: " ",
+    number: "9995979041",
     mail: "akshaysanjeev10@gmail.com",
   },
   {
@@ -143,7 +143,7 @@ const Expo = () => {
                 <span>EXPO</span>
               </a>
               <a
-                href="https://unstop.com/o/fz90XMt?lb=IvoS6d15"
+                href="https://unstop.com/o/kgSuwrN?lb=IvoS6d15&utm_medium=Share&utm_source=shortUrl"
                 id="myRegBtn"
                 className="m-6"
               >
@@ -181,7 +181,7 @@ const Expo = () => {
             </div>
           </div>
         </div>
-        <div className="md:hidden lg:hidden absolute bottom-32 text-3xl text-pink-600 font-mono">
+        <div className="md:hidden lg:hidden absolute bottom-32 text-2xl text-pink-700 font-mono">
         <Marquee > -  DON'T FORGET TO REGISTER BEFORE 14TH OF NOVEMBER - 
           </Marquee>
           </div>
