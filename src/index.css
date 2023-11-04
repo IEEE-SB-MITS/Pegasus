@@ -203,19 +203,6 @@ body {
   box-shadow: 0px 4px 56px 0px #870027;
   padding-top: 9px;
 }
-@media (min-width: 768px) {
-  /* For medium devices (tablets) and larger */
-  #event-div {
-    border-radius: 29px;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* For large devices (desktops) and larger */
-  #event-div {
-    border-radius: 29px;
-  }
-}
 .event-heading{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 46px;

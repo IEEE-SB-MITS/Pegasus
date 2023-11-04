@@ -16,6 +16,7 @@ import ras from "../../assets/RAS CHAPTER.svg";
 import keralasec from "../../assets/kerala-section.svg";
 import crfid from "../../assets/rfid.svg";
 import Marquee from "react-fast-marquee";
+
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
 
@@ -88,16 +89,7 @@ const Expo = () => {
       };
     }
 
-    // Load the Devfolio script here
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
+   
   }, []);
 
   return (
@@ -219,7 +211,7 @@ const Expo = () => {
             <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center ">
               
               <div className="md:hidden lg:hidden ">
-                <Marquee direction="left">
+                <Marquee direction="left" speed="100">
               <img
                 src={keralasec}
                 alt="RAS LOGO"
