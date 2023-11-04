@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "../../constants/style";
 // import { motion, AnimatePresence } from 'framer-motion';
-import { logo, ball, aboutusImg, mail, call } from "../../assets";
+import { logo, ball, aboutusImg, mail, call, sideball } from "../../assets";
 import chair from "../../assets/akshay.jpg";
 import viceChair from "../../assets/vicechair.jpg";
 import ann from "../../assets/annsara.jpg";
@@ -182,7 +182,7 @@ const Expo = () => {
           </div>
         </div>
         <div className="md:hidden lg:hidden absolute bottom-32 text-2xl text-pink-700 font-mono">
-        <Marquee > -  DON'T FORGET TO REGISTER BEFORE 14TH OF NOVEMBER - 
+        <Marquee > -  DON'T FORGET TO REGISTER BEFORE 14TH NOVEMBER - 
           </Marquee>
           </div>
         
@@ -192,17 +192,17 @@ const Expo = () => {
         className={`h-screen ${styles.expoColor} ${styles.flexCenter} flex-col relative overflow-hidden`}
         id="section3"
       >
-        <div className="text-5xl font-[Georgia] md:mb-7 mb-32">TIMELINE</div>
+        <div className="text-5xl text-center font-[Georgia] md:mb-7 mb-20">TIMELINE</div>
         <div className="relative h-full w-full px-10 md:p-0 lg:p-0 ">
           <img
-            src={ball}
+            src={sideball}
             alt=""
-            className="hidden md:block lg:block absolute h-[40%] md:h-full lg:h-3/5 -top-5 -right-12 spinner"
+            className="hidden md:block lg:block absolute h-[40%] md:h-full lg:h-3/5 -top-5 -right-12 -rotate-45 "
           />
           <img
-            src={ball}
+            src={sideball}
             alt=""
-            className="hidden md:block lg:block absolute h-[40%] md:h-1/2 lg:h-[60%]  -left-10 bottom-4 spinner"
+            className="hidden md:block lg:block absolute h-[40%] md:h-1/2 lg:h-[60%]  -left-10 bottom-0 "
           />
           <Timeline />
         </div>

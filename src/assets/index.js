@@ -19,6 +19,8 @@ import mail from "./mail.svg"
 import viceChair from "./vicechair.jpg"
 import ann from "./annsara.jpg"
 import joana from "./joana.jpg"
+import sideimage from "./long-side.svg"
+import sideball from "./sideimage.svg"
 export {
     cloud_left,
     cloud_right,
@@ -40,5 +42,7 @@ export {
     mail,
     viceChair,
     ann,
-    joana
+    joana,
+    sideimage,
+    sideball
 };
