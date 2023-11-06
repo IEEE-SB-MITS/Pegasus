@@ -162,14 +162,14 @@ const Expo = () => {
           </div>
           <div
             id="right"
-            className="w-1/2 h-full md:p-10 p-0 flex flex-col justify-center"
+            className="w-[65%] lg:w-1/2 md:w-1/2 h-full md:p-10 p-0 flex flex-col justify-center"
           >
-            <h1 className="text-3xl font-bold text-center">About the Event</h1>
+            <h1 className="text-3xl font-bold text-center">About<br className="md:hidden lg:hidden"/> the Event</h1>
             <div className="my-6 md:px-6 px-0 md:text-lg text-sm text-justify">
               Introducing Pegasus 2.0, presented by 𝗜𝗘𝗘𝗘 𝗦𝗕 𝗠𝗜𝗧𝗦 in partnership
               with IEEE RAS Kerala Chapter and IEEE Council on RFID Kerala
-              Section. Prepare for an exceptional project expo where the
-              boundaries of innovation are pushed to the limit.{" "}
+              Section. Prepare for an exceptional project expo and Hackathon where the
+              boundaries of innovation are pushed to the limit.
             </div>
           </div>
         </div>
