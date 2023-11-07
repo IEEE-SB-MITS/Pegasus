@@ -16,7 +16,7 @@ import ras from "../../assets/RAS CHAPTER.svg";
 import keralasec from "../../assets/kerala-section.svg";
 import crfid from "../../assets/rfid.svg";
 import Marquee from "react-fast-marquee";
-
+import Events from "./event";
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
 
@@ -147,7 +147,12 @@ const Expo = () => {
           </div>
         </div>
       </section>
-
+      <section
+        className={`h-screen ${styles.expoColor} z-10 flex flex-col items-center justify-center`}
+        id="sectionevent"
+      >
+       <Events/>
+        </section>
       <section
         className={`h-screen ${styles.expoColor} animate-section relative`}
         id="section2"
