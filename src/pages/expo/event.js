@@ -1,7 +1,7 @@
 import React from 'react'
 // import styles from "../../constants/style";
 import  Events  from "../../assets/Events.svg";
-import  Rbt  from "../../assets/rbt.svg";
+// import  Rbt  from "../../assets/rbt.svg";
 // import  Rb1  from "../../assets/rb1.svg";
 // import  Rb2  from "../../assets/rb2.svg";
 export const Event = () => {
@@ -10,7 +10,7 @@ export const Event = () => {
    
     <div className="h-full w-full flex flex-col md:flex-row md:justify-evenly justify-center items-center relative">
  
-              <span className='top-[8rem] md:text-[54px] absolute font-[cyberjunkies] md:left-[14rem]  md:top-[25rem] z-[1]' >Govind S Nath <br/>
+              <span className='top-[8rem] md:text-[54px] absolute font-[cyberjunkies] md:left-[10px]  md:top-[25rem] z-[1] lg:left-[14rem]  lg:top-[25rem]' >Govind S Nath <br/>
             {/* <span className='text-[14px] absolute font-[cyberjunkies]' >Embedded Software Engineer</span> */}
             </span>
     <div id="left" className="w-1/2 ">
@@ -44,11 +44,11 @@ export const Event = () => {
 REGISTER
 </button>
 </a>
- <img
+ {/* <img
         src={Rbt}
         alt=""
         className="absolute md:h-[10%] lg:h-[10%] h-[5%]  md:left-[190vh]  md:top-[54vh] lg:left-[140vh]  lg:top-[55vh] left-[37vh] top-[60vw]  "
-      />
+      /> */}
 
     </div>
   </div>
