@@ -1,6 +1,6 @@
 import React from 'react'
 // import styles from "../../constants/style";
-import  Events  from "../../assets/Events.svg";
+import  Events  from "../../assets/amritha.svg";
 // import  Rbt  from "../../assets/rbt.svg";
 // import  Rb1  from "../../assets/rb1.svg";
 // import  Rb2  from "../../assets/rb2.svg";
