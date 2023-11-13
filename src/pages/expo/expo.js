@@ -16,7 +16,8 @@ import ras from "../../assets/RAS CHAPTER.svg";
 import keralasec from "../../assets/kerala-section.svg";
 import crfid from "../../assets/rfid.svg";
 import Marquee from "react-fast-marquee";
-import Events from "./event";
+import Govind from "./govind";
+import Amrita from "./amrita";
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
 
@@ -149,10 +150,16 @@ const Expo = () => {
         </div>
       </section>
       <section
-        className={`h-screen ${styles.expoColor} z-10 flex flex-col items-center justify-center`}
+        className={`h-screen ${styles.expoColor} z-10   relative items-center justify-center`}
         id="sectionevent"
       >
-       <Events/>
+        <div  className={` flex justify-center text-3xl font-bold `}> Prevents   </div>
+      <div className={ `h-screen z-10  flex flex-col  md:flex-row gap-10 items-center  justify-center`}>
+       <Govind/>  
+
+       <Amrita/>
+       
+      </div>
         </section>
       <section
         className={`h-screen ${styles.expoColor} animate-section relative`}
@@ -263,7 +270,7 @@ const Expo = () => {
         className={`md:h-screen lg:h-screen h-[200vh] ${styles.expoColor}`}
         id="section5"
       >
-        <div>
+        <div> 
           <div className="w-full flex flex-col justify-center items-center md:pt-10">
             <h1 className="text-4xl event-heading">Contact Us</h1>
             <div className="lg:hidden text-md">( Tap the card to contact )</div>
