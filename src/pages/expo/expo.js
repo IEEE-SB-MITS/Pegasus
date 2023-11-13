@@ -135,7 +135,8 @@ const Expo = () => {
                 <span>EXPO</span>
               </a>
               <a
-                href="https://unstop.com/o/kgSuwrN?lb=IvoS6d15&utm_medium=Share&utm_source=shortUrl"
+                // href="https://unstop.com/o/kgSuwrN?lb=IvoS6d15&utm_medium=Share&utm_source=shortUrl"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfLunQ7pHimLuQn3sS6I3Yc7E5IIqc7g3P5gi_mV3JpXMEByA/viewform"
                 id="myRegBtn"
                 className="m-6"
               >
