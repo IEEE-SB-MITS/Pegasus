@@ -11,6 +11,7 @@ import crfid from "../../assets/rfid.svg";
 import Marquee from "react-fast-marquee";
 import Govind from "./govind";
 import Amrita from "./amrita";
+import Myfooter from "../../constants/footer";
 // import Globe from "../../common/globe";
 // import Timeline from "../hack/timeline.js";
 
@@ -268,7 +269,7 @@ const Expo = () => {
         </div>
       </section>
       <section
-        className={`md:h-screen lg:h-screen h-[200vh] ${styles.expoColor}`}
+        className={`md:h-screen lg:h-[120vh] h-[480vh] ${styles.expoColor}`}
         id="section5"
       >
         <div> 
@@ -350,7 +351,9 @@ const Expo = () => {
           </div>
         </div>
       </section>
-      <section className={`h-[20vh] w-full ${styles.expoColor}`}></section>
+      <section className={`h-[20vh] ${styles.flexCenter} w-full ${styles.expoColor}`}>
+        <Myfooter/>
+      </section>
     </div>
   );
 };
