@@ -5,10 +5,10 @@ const Myfooter = () => {
   return (
     <footer className={` ${styles.expoColor} rounded-lg shadow p-4 `}>
       <div className="w-full mx-auto max-w-screen-xl py-5 md:flex md:items-center md:justify-between">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2023{" "}
+        <span className={`text-sm text-gray-500 ${styles.flexCenter} sm:text-center dark:text-gray-400`}>
+          © 2023{"  "}
           <a href="https://ieeesbmits.in/" className="hover:underline">
-            IEEE SB MITS
+            {" "}IEEE SB MITS
           </a>
           . All Rights Reserved.
         </span>

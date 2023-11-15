@@ -44,7 +44,7 @@ const peopleDataExpo = [
   {
     img: "https://i.imgur.com/PIzBHKn.jpg",
     name: "MELVIN SABU",
-    position: "EXPO event coodinator",
+    position: "coodinator",
     number: "96052 86714",
     mail: "someone@example.com",
   },
@@ -52,7 +52,7 @@ const peopleDataExpo = [
   {
     img: "https://i.imgur.com/EVdO7QK.jpg",
     name: "JOANNA MERINE NOBLE",
-    position: "EXPO event coodinator",
+    position: "coodinator",
     number: "8137042277",
     mail: "someone@example.com",
   },
@@ -61,14 +61,14 @@ const peopleDataHack = [
   {
     img: "https://i.imgur.com/aGRNwvs.jpg",
     name: "bhagyaraj n",
-    position: "Hackathon Event Coordinator",
+    position: "Coordinator",
     number: "7510231478",
     mail: "brnbhagyaraj@gmail.com",
   },
   {
     img: "https://i.imgur.com/yfNIaCw.jpg",
     name: "parthiv s",
-    position: "Hackathon Event Coordinator",
+    position: "Coordinator",
     number: "8943462638",
     mail: "jane@example.com",
   },
@@ -188,10 +188,10 @@ const Expo = () => {
             </div>
           </div>
         </div>
-        <div className="md:hidden lg:hidden absolute bottom-32 text-2xl text-pink-700 font-mono">
+        {/* <div className="md:hidden lg:hidden absolute bottom-32 text-2xl text-pink-700 font-mono">
         <Marquee > -  DON'T FORGET TO REGISTER BEFORE 16TH NOVEMBER - 
           </Marquee>
-          </div>
+          </div> */}
         
       </section>
 
@@ -269,7 +269,7 @@ const Expo = () => {
         </div>
       </section>
       <section
-        className={`md:h-screen lg:h-[120vh] h-[480vh] ${styles.expoColor}`}
+        className={`md:h-screen lg:h-[120vh] h-[440vh] ${styles.expoColor}`}
         id="section5"
       >
         <div> 
@@ -293,7 +293,7 @@ const Expo = () => {
           <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
             {/* cards */}
 
-            <div className="md:hidden lg:hidden">-- EXPO COORDINATORS --</div>
+            <div className="md:hidden my-10 lg:hidden">-- EXPO COORDINATORS --</div>
             {peopleDataExpo.map((person, index) => (
               <ContactCard
                 key={index}
@@ -304,7 +304,7 @@ const Expo = () => {
                 mail={person.mail}
               />
             ))}
-            <div className="md:hidden lg:hidden">-- HACK COORDINATORS --</div>
+            <div className="md:hidden my-10 lg:hidden">-- HACK COORDINATORS --</div>
             {peopleDataHack.map((person, index) => (
               <ContactCard
                 key={index}
@@ -315,13 +315,13 @@ const Expo = () => {
                 mail={person.mail}
               />
             ))}
-            <div className="card mx-10 my-10">
+            <div className="card mx-10 my-3">
               <img src={basil} className="card-img" alt="" />
               <div className="card-body p-4">
+                <p className="card-sub-title w-1/2">Coordinator</p>
                 <h1 className={` pt-4`}>
                   <span className="text-[45px] ">BASIL</span> <span className="text-[1.85rem] font-normal capitalize">THANKACHAN</span>
                 </h1>
-                <p className="card-sub-title w-1/2">Hackathon Event Coordinator</p>
                 <div className="w-full h-full flex flex-row items-center justify-center">
                   <a
                     href={`tel:9562951685`}
