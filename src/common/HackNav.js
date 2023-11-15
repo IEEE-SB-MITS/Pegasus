@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { clglogo } from '../assets';
 import styles from '../constants/style';
 import { Link } from 'react-scroll'; // Import Link and Element
+import Marquee from 'react-fast-marquee';
 
 const HackNav = () => {
   let Links = [
@@ -17,8 +18,12 @@ const HackNav = () => {
   return (
     <div className='shadow-md w-full fixed top-0 left-0 z-50'>
      <div className="flex flex-col bg-blue-400 pb-0 overflow-y-auto pb-0 radial sm:px-0 sm:w-full sm:overflow-x-hidden sm:scrollbar scrollbar overflow-x-hidden relative">
-          <div className="  w-full text-xs  md:text-xl font-medium justify-center  text-black items-center bg-blue flex">
-          <span>Registration ends on 16th Nov.</span>
+          <div className="  w-full text-xs  md:text-xl font-medium justify-center  text-black items-center bg-pink-100 flex">
+          <Marquee speed={60}>
+          <span className='text-red-900 font-bold mx-10 md:mx-60'>Registrations extended to 16th Nov.</span>
+          <span className='text-red-900 font-bold mx-10 md:mx-60'>Registrations extended to 16th Nov.</span>
+          <span className='text-red-900 font-bold mx-10 md:mx-60'>Registrations extended to 16th Nov.</span>
+          </Marquee>
           </div>
           </div>
       <div className={`md:flex items-center justify-between ${styles.hackColor} py-4 md:px-10 px-7`}>
