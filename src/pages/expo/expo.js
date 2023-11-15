@@ -4,6 +4,7 @@ import styles from "../../constants/style";
 import { logo, ball, aboutusImg, mail, call, sideball } from "../../assets";
 import chair from "../../assets/akshay.jpg";
 import viceChair from "../../assets/vicechair.jpg";
+import Mel from "../../assets/Mel.jpg";
 import ann from "../../assets/annsara.jpg";
 import joana from "../../assets/joana.jpg";
 import BHAGYARAJ_N from "../../assets/BHAGYARAJ_N.jpg";
@@ -37,14 +38,22 @@ const peopleData = [
     number: "9400538729",
     mail: "annsarababy@ieee.org",
   },
-];
-const peopleDataExpo = [
   {
     img: viceChair,
     name: "Karthik U",
-    position: "EXPO event coodinator",
+    position: "Vice Chair",
     number: "8281628198",
     mail: "karthiku@ieee.org",
+  },
+
+];
+const peopleDataExpo = [
+  {
+    img: Mel,
+    name: "MELVIN SABU",
+    position: "EXPO event coodinator",
+    number: "96052 86714",
+    mail: "someone@example.com",
   },
 
   {
@@ -110,8 +119,8 @@ const Expo = () => {
             alt=""
             className="absolute h-2/6 md:h-1/2 lg:h-1/2  -right-24 bottom-4 spinner"
           />
-
           <div className="h-full w-full flex flex-col justify-center items-center">
+         
             <div id="logo">
               <img src={logo} alt="logo" className="" />
             </div>
@@ -187,7 +196,7 @@ const Expo = () => {
           </div>
         </div>
         <div className="md:hidden lg:hidden absolute bottom-32 text-2xl text-pink-700 font-mono">
-        <Marquee > -  DON'T FORGET TO REGISTER BEFORE 14TH NOVEMBER - 
+        <Marquee > -  DON'T FORGET TO REGISTER BEFORE 16TH NOVEMBER - 
           </Marquee>
           </div>
         
