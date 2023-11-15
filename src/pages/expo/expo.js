@@ -2,15 +2,8 @@ import React, { useEffect } from "react";
 import styles from "../../constants/style";
 // import { motion, AnimatePresence } from 'framer-motion';
 import { logo, ball, aboutusImg, mail, call, sideball } from "../../assets";
-import chair from "../../assets/akshay.jpg";
-import viceChair from "../../assets/vicechair.jpg";
-import ann from "../../assets/annsara.jpg";
-import joana from "../../assets/joana.jpg";
-import BHAGYARAJ_N from "../../assets/BHAGYARAJ_N.jpg";
 import ContactCard from "../../constants/card";
 import basil from "../../assets/basil.jpg";
-
-import parthiv from "../../assets/parhiv.jpg";
 import Timeline from "../../constants/Timeline";
 import ras from "../../assets/RAS CHAPTER.svg";
 import keralasec from "../../assets/kerala-section.svg";
@@ -24,31 +17,39 @@ import Amrita from "./amrita";
 
 const peopleData = [
   {
-    img: chair,
+    img: "https://i.imgur.com/LQf0xXP.jpg",
     name: "Akshay Sanjeev",
     position: "chair",
     number: "9995979041",
     mail: "akshaysanjeev10@gmail.com",
   },
   {
-    img: ann,
+    img: "https://i.imgur.com/jTL8hbW.jpg",
     name: "Ann Sara Baby",
     position: "secretary",
     number: "9400538729",
     mail: "annsarababy@ieee.org",
   },
-];
-const peopleDataExpo = [
   {
-    img: viceChair,
+    img: "https://i.imgur.com/tbOJCZ9.jpg",
     name: "Karthik U",
-    position: "EXPO event coodinator",
+    position: "Vice Chair",
     number: "8281628198",
     mail: "karthiku@ieee.org",
   },
 
+];
+const peopleDataExpo = [
   {
-    img: joana,
+    img: "https://i.imgur.com/PIzBHKn.jpg",
+    name: "MELVIN SABU",
+    position: "EXPO event coodinator",
+    number: "96052 86714",
+    mail: "someone@example.com",
+  },
+
+  {
+    img: "https://i.imgur.com/EVdO7QK.jpg",
     name: "JOANNA MERINE NOBLE",
     position: "EXPO event coodinator",
     number: "8137042277",
@@ -57,14 +58,14 @@ const peopleDataExpo = [
 ];
 const peopleDataHack = [
   {
-    img: BHAGYARAJ_N,
+    img: "https://i.imgur.com/aGRNwvs.jpg",
     name: "bhagyaraj n",
     position: "Hackathon Event Coordinator",
     number: "7510231478",
     mail: "brnbhagyaraj@gmail.com",
   },
   {
-    img: parthiv,
+    img: "https://i.imgur.com/yfNIaCw.jpg",
     name: "parthiv s",
     position: "Hackathon Event Coordinator",
     number: "8943462638",
@@ -110,8 +111,8 @@ const Expo = () => {
             alt=""
             className="absolute h-2/6 md:h-1/2 lg:h-1/2  -right-24 bottom-4 spinner"
           />
-
           <div className="h-full w-full flex flex-col justify-center items-center">
+         
             <div id="logo">
               <img src={logo} alt="logo" className="" />
             </div>
@@ -187,7 +188,7 @@ const Expo = () => {
           </div>
         </div>
         <div className="md:hidden lg:hidden absolute bottom-32 text-2xl text-pink-700 font-mono">
-        <Marquee > -  DON'T FORGET TO REGISTER BEFORE 14TH NOVEMBER - 
+        <Marquee > -  DON'T FORGET TO REGISTER BEFORE 16TH NOVEMBER - 
           </Marquee>
           </div>
         
