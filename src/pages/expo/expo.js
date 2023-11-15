@@ -3,7 +3,6 @@ import styles from "../../constants/style";
 // import { motion, AnimatePresence } from 'framer-motion';
 import { logo, ball, aboutusImg, mail, call, sideball } from "../../assets";
 import ContactCard from "../../constants/card";
-import basil from "../../assets/basil.jpg";
 import Timeline from "../../constants/Timeline";
 import ras from "../../assets/RAS CHAPTER.svg";
 import keralasec from "../../assets/kerala-section.svg";
@@ -11,7 +10,6 @@ import crfid from "../../assets/rfid.svg";
 import Marquee from "react-fast-marquee";
 import Govind from "./govind";
 import Amrita from "./amrita";
-import Myfooter from "../../constants/footer";
 import { Link } from "react-router-dom";
 
 const peopleData = [
@@ -274,7 +272,7 @@ const Expo = () => {
         </div>
       </section>
       <section
-        className={`md:h-screen lg:h-[120vh] h-[370vh] ${styles.expoColor}`}
+        className={`md:h-screen lg:h-[120vh] h-[360vh] ${styles.expoColor}`}
         id="section5"
       >
         <div>
@@ -325,7 +323,7 @@ const Expo = () => {
               />
             ))}
             <div className="card mx-10 my-3">
-              <img src={basil} className="card-img" alt="" />
+              <img src="https://i.imgur.com/hxLi7a4.jpg" className="card-img" alt="" />
               <div className="card-body p-4">
                 <p className="card-sub-title w-1/2">Coordinator</p>
                 <h1 className={` pt-4`}>
@@ -362,12 +360,12 @@ const Expo = () => {
             </div>
           </div>
         </div>
+
       </section>
-      <section
-        className={`h-[20vh] ${styles.flexCenter} w-full ${styles.expoColor}`}
-      >
-        <Myfooter />
+      <section className={`h-[20vh] ${styles.expoColor}`}>
+
       </section>
+    
     </div>
   );
 };
