@@ -2,16 +2,8 @@ import React, { useEffect } from "react";
 import styles from "../../constants/style";
 // import { motion, AnimatePresence } from 'framer-motion';
 import { logo, ball, aboutusImg, mail, call, sideball } from "../../assets";
-import chair from "../../assets/akshay.jpg";
-import viceChair from "../../assets/vicechair.jpg";
-import Mel from "../../assets/Mel.jpg";
-import ann from "../../assets/annsara.jpg";
-import joana from "../../assets/joana.jpg";
-import BHAGYARAJ_N from "../../assets/BHAGYARAJ_N.jpg";
 import ContactCard from "../../constants/card";
 import basil from "../../assets/basil.jpg";
-
-import parthiv from "../../assets/parhiv.jpg";
 import Timeline from "../../constants/Timeline";
 import ras from "../../assets/RAS CHAPTER.svg";
 import keralasec from "../../assets/kerala-section.svg";
@@ -25,21 +17,21 @@ import Amrita from "./amrita";
 
 const peopleData = [
   {
-    img: chair,
+    img: "https://i.imgur.com/LQf0xXP.jpg",
     name: "Akshay Sanjeev",
     position: "chair",
     number: "9995979041",
     mail: "akshaysanjeev10@gmail.com",
   },
   {
-    img: ann,
+    img: "https://i.imgur.com/jTL8hbW.jpg",
     name: "Ann Sara Baby",
     position: "secretary",
     number: "9400538729",
     mail: "annsarababy@ieee.org",
   },
   {
-    img: viceChair,
+    img: "https://i.imgur.com/tbOJCZ9.jpg",
     name: "Karthik U",
     position: "Vice Chair",
     number: "8281628198",
@@ -49,7 +41,7 @@ const peopleData = [
 ];
 const peopleDataExpo = [
   {
-    img: Mel,
+    img: "https://i.imgur.com/PIzBHKn.jpg",
     name: "MELVIN SABU",
     position: "EXPO event coodinator",
     number: "96052 86714",
@@ -57,7 +49,7 @@ const peopleDataExpo = [
   },
 
   {
-    img: joana,
+    img: "https://i.imgur.com/EVdO7QK.jpg",
     name: "JOANNA MERINE NOBLE",
     position: "EXPO event coodinator",
     number: "8137042277",
@@ -66,14 +58,14 @@ const peopleDataExpo = [
 ];
 const peopleDataHack = [
   {
-    img: BHAGYARAJ_N,
+    img: "https://i.imgur.com/aGRNwvs.jpg",
     name: "bhagyaraj n",
     position: "Hackathon Event Coordinator",
     number: "7510231478",
     mail: "brnbhagyaraj@gmail.com",
   },
   {
-    img: parthiv,
+    img: "https://i.imgur.com/yfNIaCw.jpg",
     name: "parthiv s",
     position: "Hackathon Event Coordinator",
     number: "8943462638",
