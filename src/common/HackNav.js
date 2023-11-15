@@ -16,6 +16,11 @@ const HackNav = () => {
   
   return (
     <div className='shadow-md w-full fixed top-0 left-0 z-50'>
+     <div className="flex flex-col bg-blue-400 pb-0 overflow-y-auto pb-0 radial sm:px-0 sm:w-full sm:overflow-x-hidden sm:scrollbar scrollbar overflow-x-hidden relative">
+          <div className="  w-full text-xs  md:text-xl font-medium justify-center  text-black items-center bg-blue flex">
+          <span>Registration ends on 16th Nov.</span>
+          </div>
+          </div>
       <div className={`md:flex items-center justify-between ${styles.hackColor} py-4 md:px-10 px-7`}>
         <div className='font-bold text-2xl pt-2 cursor-pointer flex items-center font-[Poppins] text-white'>
           <span className='text-3xl text-white mr-1'>
