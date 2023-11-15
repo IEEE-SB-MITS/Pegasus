@@ -8,14 +8,14 @@ const Myfooter = () => {
         <span className={`text-sm text-gray-500 ${styles.flexCenter} sm:text-center dark:text-gray-400`}>
           © 2023{"  "}
           <a href="https://ieeesbmits.in/" className="hover:underline">
-            {" "}IEEE SB MITS
+            &nbsp; IEEE SB MITS
           </a>
           . All Rights Reserved.
         </span>
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>
-            <a href="#section2" className="hover:underline me-4 md:me-6">
-              About
+            <a href="#section2" className="hover:underline ms-4 me-4 md:me-6">
+              &nbsp;About
             </a>
           </li>
           <li>

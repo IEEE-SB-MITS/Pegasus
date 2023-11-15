@@ -12,9 +12,7 @@ import Marquee from "react-fast-marquee";
 import Govind from "./govind";
 import Amrita from "./amrita";
 import Myfooter from "../../constants/footer";
-// import Globe from "../../common/globe";
-// import Timeline from "../hack/timeline.js";
-
+import { Link } from "react-router-dom";
 
 const peopleData = [
   {
@@ -38,7 +36,6 @@ const peopleData = [
     number: "8281628198",
     mail: "karthiku@ieee.org",
   },
-
 ];
 const peopleDataExpo = [
   {
@@ -91,8 +88,6 @@ const Expo = () => {
         myBtn.removeEventListener("mousemove", mousemoveHandler);
       };
     }
-
-   
   }, []);
 
   return (
@@ -113,13 +108,12 @@ const Expo = () => {
             className="absolute h-2/6 md:h-1/2 lg:h-1/2  -right-24 bottom-4 spinner"
           />
           <div className="h-full w-full flex flex-col justify-center items-center">
-         
             <div id="logo">
               <img src={logo} alt="logo" className="" />
             </div>
             <div id="text" className="text-center my-5">
               <h1 className="md:text-5xl text-3xl font-bold">
-                THE EXPO{" "}
+                EXPO{" "}
                 <span className="text-red-500 flex md:inline-block md:flex-none justify-center">
                   &
                 </span>{" "}
@@ -155,16 +149,20 @@ const Expo = () => {
         className={`h-screen ${styles.expoColor} z-10   relative items-center justify-center`}
         id="sectionevent"
       >
-        <div  className={` flex justify-center text-3xl font-bold `}> Pre-Events   </div>
-      <div className={ `h-screen z-10  flex flex-col  md:flex-row gap-10 items-center  justify-center`}>
-       <Govind/>  
+        <div className={` flex justify-center text-3xl font-bold `}>
+          {" "}
+          Pre-Events{" "}
+        </div>
+        <div
+          className={`h-screen z-10  flex flex-col  md:flex-row gap-10 items-center  justify-center`}
+        >
+          <Govind />
 
-       <Amrita/>
-       
-      </div>
-        </section>
+          <Amrita />
+        </div>
+      </section>
       <section
-        className={`h-screen ${styles.expoColor} animate-section relative`}
+        className={`h-[150vh] ${styles.expoColor} animate-section relative`}
         id="section2"
       >
         <div className="h-full w-full flex flex-col md:flex-row md:justify-evenly justify-center items-center relative">
@@ -179,27 +177,37 @@ const Expo = () => {
             id="right"
             className="w-[65%] lg:w-1/2 md:w-1/2 h-full md:p-10 p-0 flex flex-col justify-center"
           >
-            <h1 className="text-3xl font-bold text-center">About<br className="md:hidden lg:hidden"/> the Event</h1>
+            <h1 className="text-3xl font-bold text-center">
+              About
+              <br className="md:hidden lg:hidden" /> the Event
+            </h1>
             <div className="my-6 md:px-6 px-0 md:text-lg text-sm text-justify">
               Introducing Pegasus 2.0, presented by 𝗜𝗘𝗘𝗘 𝗦𝗕 𝗠𝗜𝗧𝗦 in partnership
               with IEEE RAS Kerala Chapter and IEEE Council on RFID Kerala
-              Section. Prepare for an exceptional project expo and Hackathon where the
-              boundaries of innovation are pushed to the limit.
+              Section. Prepare for an exceptional project expo and Hackathon
+              where the boundaries of innovation are pushed to the limit.
             </div>
+            <Link
+              to="https://drive.google.com/file/d/1AozPaKCcWnJ1RZVRXadF_htRIwFbVXUA/view?usp=drive_link"
+            >
+              <span className="text-[#d400d4] text-xl p-4 ">View Guidelines {'>>'}</span>
+            </Link>
           </div>
         </div>
         {/* <div className="md:hidden lg:hidden absolute bottom-32 text-2xl text-pink-700 font-mono">
         <Marquee > -  DON'T FORGET TO REGISTER BEFORE 16TH NOVEMBER - 
           </Marquee>
           </div> */}
-        
       </section>
+
 
       <section
         className={`h-screen ${styles.expoColor} ${styles.flexCenter} flex-col relative overflow-hidden`}
         id="section3"
       >
-        <div className="text-5xl text-center font-[Georgia] md:mb-7 mb-20">TIMELINE</div>
+        <div className="text-5xl text-center font-[Georgia] md:mb-7 mb-20">
+          TIMELINE
+        </div>
         <div className="relative h-full w-full px-10 md:p-0 lg:p-0 ">
           <img
             src={sideball}
@@ -215,51 +223,48 @@ const Expo = () => {
         </div>
       </section>
       <section
-        className={`md:h-screen h-1/4 ${styles.expoColor} flex  flex-col items-center`}
+        className={`md:h-screen h-1/4 ${styles.expoColor} flex  flex-col items-center`} id="section4"
       >
         <h1 className="event-heading">OUR PARTNERS</h1>
-        
+
         <div className="relative h-full w-full px-10 md:p-0 lg:p-0 overflow-hidden">
-     
-        
           <div className="h-full w-full flex flex-col justify-center">
             <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center ">
-              
               <div className="md:hidden lg:hidden ">
                 <Marquee direction="left" speed="100">
-              <img
-                src={keralasec}
-                alt="RAS LOGO"
-                className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7"
-              />
-              <img
-                src={crfid}
-                alt="IEEE Kerala section LOGO"
-                className="h-[50px] md:h-[35%] my-20 md:my-0 mx-7"
-              />
-              <img
-                src={ras}
-                alt="CRFID LOGO"
-                className="h-[35px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
-              />
-              </Marquee>
+                  <img
+                    src={keralasec}
+                    alt="RAS LOGO"
+                    className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7"
+                  />
+                  <img
+                    src={crfid}
+                    alt="IEEE Kerala section LOGO"
+                    className="h-[50px] md:h-[35%] my-20 md:my-0 mx-7"
+                  />
+                  <img
+                    src={ras}
+                    alt="CRFID LOGO"
+                    className="h-[35px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
+                  />
+                </Marquee>
               </div>
               <div className="hidden md:flex lg:flex h-full w-full md:justify-center md:items-center">
-              <img
-                src={keralasec}
-                alt="RAS LOGO"
-                className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7"
-              />
-              <img
-                src={crfid}
-                alt="IEEE Kerala section LOGO"
-                className="h-[50px] md:h-[35%] my-20 md:my-0 mx-7"
-              />
-              <img
-                src={ras}
-                alt="CRFID LOGO"
-                className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
-              />
+                <img
+                  src={keralasec}
+                  alt="RAS LOGO"
+                  className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7"
+                />
+                <img
+                  src={crfid}
+                  alt="IEEE Kerala section LOGO"
+                  className="h-[50px] md:h-[35%] my-20 md:my-0 mx-7"
+                />
+                <img
+                  src={ras}
+                  alt="CRFID LOGO"
+                  className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
+                />
               </div>
             </div>
             <div className="hidden md:flex h-1/4 w-full items-start justify-center">
@@ -269,10 +274,10 @@ const Expo = () => {
         </div>
       </section>
       <section
-        className={`md:h-screen lg:h-[120vh] h-[440vh] ${styles.expoColor}`}
+        className={`md:h-screen lg:h-[120vh] h-[370vh] ${styles.expoColor}`}
         id="section5"
       >
-        <div> 
+        <div>
           <div className="w-full flex flex-col justify-center items-center md:pt-10">
             <h1 className="text-4xl event-heading">Contact Us</h1>
             <div className="lg:hidden text-md">( Tap the card to contact )</div>
@@ -293,7 +298,9 @@ const Expo = () => {
           <div className="h-full w-full flex flex-col md:flex-row lg:flex-row items-center justify-center">
             {/* cards */}
 
-            <div className="md:hidden my-10 lg:hidden">-- EXPO COORDINATORS --</div>
+            <div className="md:hidden my-10 lg:hidden">
+              -- EXPO COORDINATORS --
+            </div>
             {peopleDataExpo.map((person, index) => (
               <ContactCard
                 key={index}
@@ -304,7 +311,9 @@ const Expo = () => {
                 mail={person.mail}
               />
             ))}
-            <div className="md:hidden my-10 lg:hidden">-- HACK COORDINATORS --</div>
+            <div className="md:hidden my-10 lg:hidden">
+              -- HACK COORDINATORS --
+            </div>
             {peopleDataHack.map((person, index) => (
               <ContactCard
                 key={index}
@@ -320,7 +329,10 @@ const Expo = () => {
               <div className="card-body p-4">
                 <p className="card-sub-title w-1/2">Coordinator</p>
                 <h1 className={` pt-4`}>
-                  <span className="text-[45px] ">BASIL</span> <span className="text-[1.85rem] font-normal capitalize">THANKACHAN</span>
+                  <span className="text-[45px] ">BASIL</span>{" "}
+                  <span className="text-[1.85rem] font-normal capitalize">
+                    THANKACHAN
+                  </span>
                 </h1>
                 <div className="w-full h-full flex flex-row items-center justify-center">
                   <a
@@ -351,8 +363,10 @@ const Expo = () => {
           </div>
         </div>
       </section>
-      <section className={`h-[20vh] ${styles.flexCenter} w-full ${styles.expoColor}`}>
-        <Myfooter/>
+      <section
+        className={`h-[20vh] ${styles.flexCenter} w-full ${styles.expoColor}`}
+      >
+        <Myfooter />
       </section>
     </div>
   );

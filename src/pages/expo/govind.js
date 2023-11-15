@@ -16,7 +16,7 @@ export const Event = () => {
   <p className='font-semibold text-gray-900 md:text-[16px]  text-[9px]'>    11th November 2023</p>
     
   </div>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWPmXPSkK-Zak3KVP6fh3Gex1nbjkTZhmFvbMBoUUA3Ke3sw/viewform" class="relative w-[10rem] py-2 px-2 text-black text-base font-bold uppercase rounded-[50px] overflow-hidden bg-white transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-gray-500 before:to-gray-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0" >Registration closed</a>
+  <div className="relative w-[10rem] py-2 px-2 text-black text-base font-bold uppercase rounded-[50px] overflow-hidden bg-white transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-gray-500 before:to-gray-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-[50px] hover:before:left-0" >Registration closed</div>
 </div>
   </div>
   

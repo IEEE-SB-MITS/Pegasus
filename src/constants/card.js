@@ -4,7 +4,7 @@ import { call, mail } from '../assets';
 const ContactCard = (props) => {
  
   return (
-    <div className="card mx-10 my-3 md:my:10 lg:my:10">
+    <div className="card mx-10 my-3 md:my-10 lg:my-10">
       <img src={props.img} className="card-img" alt="" />
       <div className="card-body p-4">
         <p className="card-sub-title w-1/2">{props.position}</p>

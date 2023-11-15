@@ -30,7 +30,7 @@ const HackNav = () => {
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-4 cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
