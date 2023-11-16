@@ -7,13 +7,13 @@ const DateExtended = () => {
     <div className="  w-full text-xs  md:text-xl font-medium justify-center  text-black items-center bg-[#d400d4]/50 py-1 md:p-1/2 lg:p-1/2 flex">
       <Marquee speed={60}>
         <span className="text-white font-normal font-mono mx-10 md:mx-60">
-          Registrations extended to 16th Nov.
+          Registrations extended to 17th Nov.
         </span>
         <span className="text-white font-normal font-mono mx-10 md:mx-60">
-          Registrations extended to 16th Nov.
+          Registrations extended to 17th Nov.
         </span>
         <span className="text-white font-normal font-mono mx-10 md:mx-60">
-          Registrations extended to 16th Nov.
+          Registrations extended to 17th Nov.
         </span>
       </Marquee>
     </div>
