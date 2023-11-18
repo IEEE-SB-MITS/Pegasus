@@ -10,6 +10,7 @@ import crfid from "../../assets/rfid.svg";
 import Marquee from "react-fast-marquee";
 import Govind from "./govind";
 import Amrita from "./amrita";
+import Quiz from "./quiz";
 import { Link } from "react-router-dom";
 
 const peopleData = [
@@ -155,8 +156,8 @@ const Expo = () => {
           className={`h-screen z-10  flex flex-col  md:flex-row gap-10 items-center  justify-center`}
         >
           <Govind />
-
           <Amrita />
+          <Quiz/>
         </div>
       </section>
       <section
