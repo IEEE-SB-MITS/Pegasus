@@ -225,7 +225,7 @@ const Expo = () => {
               <img
                 src={ras}
                 alt="CRFID LOGO"
-                className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
+                className="h-[35px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
               />
               </Marquee>
               </div>
