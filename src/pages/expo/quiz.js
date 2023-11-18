@@ -12,7 +12,7 @@ export const Event = () => {
  <div className="group before:hover:scale-100 before:hover:h-[25rem] before:hover:w-[20rem] before:hover:h-70 before:hover:rounded-b-2xl before:transition-all before:duration-500 before:content-[''] before:w-80 before:h-48 before:rounded-t-2xl before:bg-gradient-to-bl from-indigo-300 via-red-400 to-indigo-700 before:absolute before:top-0 md:w-[20rem] w-[13rem] md:h-[25rem] h-[19rem] relative bg-slate-50 flex flex-col items-center justify-center gap-2 text-center rounded-2xl overflow-hidden">
   <img className="w-38 h-28  mt-8 rounded-full border-4 border-slate-50 z-10 group-hover:scale-150 group-hover:-translate-x-24  group-hover:-translate-y-20 transition-all duration-500" src={Events} alt='event'/>
   <div className="z-10  group-hover:-translate-y-10 transition-all  duration-500">   <span className="md:text-3xl text-indigo-900  text-[18px] font-extrabold mt-4 ">Quizzizz</span>
-    <p className='font-semibold text-purple-900 md:text-[16px]  text-[9px]'> Autonomous  on  self-driving cars   <br/></p>
+    <p className='font-semibold text-purple-900 md:text-[16px]  text-[9px]'> Quiz on Autonomous self-driving cars   <br/></p>
   <p className='font-semibold text-purple-900 md:text-[16px]  text-[9px]'>   21st November 2023
 </p>
     
