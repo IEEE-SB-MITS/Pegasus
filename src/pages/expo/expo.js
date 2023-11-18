@@ -145,7 +145,7 @@ const Expo = () => {
         </div>
       </section>
       <section
-        className={`h-screen ${styles.expoColor} z-10   relative items-center justify-center`}
+        className={`h-[120vh] ${styles.expoColor} z-10   relative items-center justify-center`}
         id="sectionevent"
       >
         <div className={` flex justify-center text-3xl font-bold `}>
@@ -153,7 +153,7 @@ const Expo = () => {
           Pre-Events{" "}
         </div>
         <div
-          className={`h-screen z-10  flex flex-col  md:flex-row gap-10 items-center  justify-center`}
+          className={`h-full z-10  flex flex-col  md:flex-row gap-10 items-center  justify-center`}
         >
           <Govind />
           <Amrita />
