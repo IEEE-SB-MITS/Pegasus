@@ -40,7 +40,7 @@ const peopleDataExpo = [
   {
     img: "https://i.imgur.com/PIzBHKn.jpg",
     name: "MELVIN SABU",
-    position: "coodinator",
+    position: "Coordinator",
     number: "96052 86714",
     mail: "someone@example.com",
   },
@@ -48,7 +48,7 @@ const peopleDataExpo = [
   {
     img: "https://i.imgur.com/EVdO7QK.jpg",
     name: "JOANNA MERINE NOBLE",
-    position: "coodinator",
+    position: "Coordinator",
     number: "8137042277",
     mail: "someone@example.com",
   },
