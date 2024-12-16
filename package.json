@@ -15,7 +15,6 @@
     "jquery": "^3.7.1",
     "material-icons": "^1.13.12",
     "node-compass": "^0.2.4",
-    "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-chrono": "^2.3.1",
     "react-dom": "^18.2.0",
@@ -24,6 +23,7 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-vertical-timeline-component": "^3.6.0",
+    "sass": "^1.83.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
