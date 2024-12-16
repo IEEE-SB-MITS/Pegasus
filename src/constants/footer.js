@@ -6,7 +6,7 @@ const Myfooter = () => {
     <footer className={`w-full h-full flex items-center  rounded-lg shadow p-4 `}>
       <div className="w-full mx-auto max-w-screen-xl py-5 md:flex md:items-center md:justify-between">
         <span className={`text-sm text-gray-500 ${styles.flexCenter} sm:text-center dark:text-gray-400`}>
-          © 2023{"  "}
+          © 2024{"  "}
           <a href="https://ieeesbmits.in/" className="hover:underline">
             &nbsp; IEEE SB MITS
           </a>
