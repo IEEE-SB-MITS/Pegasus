@@ -5,3 +5,21 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+@font-face {
+    font-family: 'ProductSans';
+    src: url('./assets/font/ProductSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'BrunoAce';
+    src: url('./assets/font/BrunoAce-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

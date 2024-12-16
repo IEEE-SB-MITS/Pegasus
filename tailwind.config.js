@@ -5,7 +5,15 @@ module.exports = {
     "./src/**/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        BrunoAce: ['BrunoAce', 'sans-serif'], 
+        ProductSans: ['ProductSans', 'sans-serif']
+      },
+      spacing: {
+        'screen-minus-80': 'calc(100vh - 70px)', // Custom spacing value
+      },
+    },
   },
   plugins: [],
 }

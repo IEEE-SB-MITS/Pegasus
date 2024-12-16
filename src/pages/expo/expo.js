@@ -16,7 +16,8 @@ import Myfooter from "../../constants/footer";
 import { Main } from "../../sections/Main";
 import Team from '../../sections/Team'
 import Time from "../../sections/Time";
-import About from '../../sections/About'
+import About from '../../sections/About';
+import backg from '../../assets/backg.png';
 
 
 const Expo = () => {
@@ -39,7 +40,7 @@ const Expo = () => {
   }, []);
 
   return (
-    <div id="maindiv">
+    <div id="maindiv"  className="bg-[#020202]">
       <Main/>
       {/* <section
         className={`h-[120vh] ${styles.expoColor} z-10   relative items-center justify-center`}
@@ -60,62 +61,9 @@ const Expo = () => {
 
       <About />
 
-
       <Time/>
-
-      <section
-        className={`md:h-screen h-1/4 ${styles.expoColor} flex  flex-col items-center`} id="section4"
-      >
-        <h1 className="event-heading">OUR PARTNERS</h1>
-
-        <div className="relative h-full w-full px-10 md:p-0 lg:p-0 overflow-hidden">
-          <div className="h-full w-full flex flex-col justify-center">
-            <div className="flex flex-col md:flex-row  h-1/2 w-full items-center justify-center ">
-              <div className="md:hidden lg:hidden ">
-                <Marquee direction="left" speed="100">
-                  <img
-                    src={keralasec}
-                    alt="RAS LOGO"
-                    className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7"
-                  />
-                  <img
-                    src={crfid}
-                    alt="IEEE Kerala section LOGO"
-                    className="h-[50px] md:h-[35%] my-20 md:my-0 mx-7"
-                  />
-                  <img
-                    src={ras}
-                    alt="CRFID LOGO"
-                    className="h-[35px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
-                  />
-                </Marquee>
-              </div>
-              <div className="hidden md:flex lg:flex h-full w-full md:justify-center md:items-center">
-                <img
-                  src={keralasec}
-                  alt="RAS LOGO"
-                  className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7"
-                />
-                <img
-                  src={crfid}
-                  alt="IEEE Kerala section LOGO"
-                  className="h-[50px] md:h-[35%] my-20 md:my-0 mx-7"
-                />
-                <img
-                  src={ras}
-                  alt="CRFID LOGO"
-                  className="h-[50px] md:h-[30%] my-20 md:my-0 mx-7 md:hidden lg:hidden"
-                />
-              </div>
-            </div>
-            <div className="hidden md:flex h-1/4 w-full items-start justify-center">
-              <img src={ras} alt="CRFID LOGO" className="h-[20%] md:h-[30%]" />
-            </div>
-          </div>
-        </div>
-      </section>
       
-      <section className={` ${styles.expoColor}`} id="section5">
+      <section id="section5">
         <div className="w-full flex flex-col justify-center items-center md:pt-10 pb-14">
           <h1 className="text-4xl event-heading">Contact Us</h1>
           <div className="lg:hidden text-md">( Tap the card to contact )</div>
@@ -124,7 +72,7 @@ const Expo = () => {
       </section>
       
 
-      <section className={`h-[20vh] ${styles.expoColor}`}>
+      <section className={`h-[20vh]`}>
       </section>
       
       <Myfooter/>

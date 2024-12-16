@@ -1,5 +1,6 @@
 import "./App.css";
 import "./index.css";
+import './font.css';
 
 import HackNav from "./common/HackNav";
 import Expo from "./pages/expo/expo";
