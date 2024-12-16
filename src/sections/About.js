@@ -21,7 +21,7 @@ const About = () => {
         id="right"
         className="w-[65%] md:w-3/5 h-full md:p-10 p-0 flex flex-col justify-center"
       >
-        <h1 className="text-3xl font-bold font-BrunoAce">
+        <h1 className="text-base md:text-3xl font-bold font-BrunoAce">
           ABOUT THE EVENT
         </h1>
         <div className="my-6  px-0 md:text-lg text-sm text-justify md:pr-20">

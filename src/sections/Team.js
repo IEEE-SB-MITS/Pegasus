@@ -7,9 +7,9 @@ const Team = () => {
     <div className="md:mx-24 flex flex-col gap-16 justify-center items-center">
       <div className="flex flex-col gap-8 justify-center items-center">
           <div className="lead flex-col flex md:flex-row gap-12 md:gap-20">
-          <ProfileCard name={teamData[0].name} title={teamData[0].title}/>
-          <ProfileCard name={teamData[1].name} title={teamData[1].title}/>
-          <ProfileCard name={teamData[2].name} title={teamData[2].title}/>
+          <ProfileCard name={teamData[0].name} title={teamData[0].title} email={teamData[0].mail}/>
+          <ProfileCard name={teamData[1].name} title={teamData[1].title} email={teamData[1].mail}/>
+          <ProfileCard name={teamData[2].name} title={teamData[2].title} email={teamData[2].mail}/>
           </div>
           <div className="non-lead flex flex-col md:flex-row flex-wrap gap-12 md:gap-20 justify-center">
           {teamData.slice(3).map((member, index) => (

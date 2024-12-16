@@ -65,7 +65,7 @@ const Expo = () => {
       
       <section id="section5">
         <div className="w-full flex flex-col justify-center items-center md:pt-10 pb-14">
-          <h1 className="text-4xl font-bold font-BrunoAce">CONTACT US</h1>
+          <h1 className="text-2xl md:text-4xl font-bold font-BrunoAce">CONTACT US</h1>
           <div className="lg:hidden text-md">( Tap the card to contact )</div>
         </div>
         <Team />
