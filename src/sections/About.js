@@ -21,20 +21,20 @@ const About = () => {
         id="right"
         className="w-[65%] md:w-3/5 h-full md:p-10 p-0 flex flex-col justify-center"
       >
-        <h1 className="text-3xl font-bold text-center">
-          About the Event
+        <h1 className="text-3xl font-bold font-BrunoAce">
+          ABOUT THE EVENT
         </h1>
-        <div className="my-6 md:px-6 px-0 md:text-lg text-sm text-justify">
+        <div className="my-6  px-0 md:text-lg text-sm text-justify md:pr-20">
           Introducing PEGASUS 3.0, the third edition of the flagship technical 
           event organized by IEEE SB MITS. This two-day fest promises an exciting blend 
           of workshops, a 24-hour hackathon, competitions, and technical sessions that foster 
           creativity, learning, and innovation. Prepare for an exceptional experience where talent 
           meets opportunity, pushing the boundaries of innovation to new heights.
         </div>
-        <Link
+        <Link className='hover:underline text-[#D71015] underline-offset-4'
           to="https://drive.google.com/file/d/1AozPaKCcWnJ1RZVRXadF_htRIwFbVXUA/view?usp=drive_link"
         >
-          <span className="text-xl py-4 md:px-6 text-[#D71015] ">View Guidelines {'>>'}</span>
+          <span className="text-xl py-4 text-[#D71015] ">View Guidelines</span>
         </Link>
       </div>
     </div>

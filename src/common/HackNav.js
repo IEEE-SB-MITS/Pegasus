@@ -6,8 +6,8 @@ import DateExtended from "./extension";
 
 const Links = [
   { name: "Home", link: "section1" },
-  { name: "Timeline", link: "section3" },
   { name: "About", link: "section2" },
+  { name: "Timeline", link: "section3" },
   // { name: "Partners ", link: "section4" },
   { name: "Contact", link: "section5" },
 ];

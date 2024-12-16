@@ -22,10 +22,10 @@ export const Main = () => {
         className="absolute h-2/6 md:h-1/2 lg:h-1/2  -right-24 bottom-4 spinner"
       />
       <div className="h-full w-full flex flex-col justify-center items-center">
-        <div id="logo">
+        <div id="logo" >
           <img src={logo} alt="logo" className="h-[180px] md:h-[380px] object-contain"  />
         </div>
-        <div id="text" className="text-center mb-5">
+        <div id="text" className="text-center mb-5 -mt-10">
           <h1 className="md:text-5xl text-3xl font-bold font-BrunoAce">HACKATHON</h1>
         </div>
 

@@ -6,10 +6,10 @@ import Timeline from '../constants/Timeline';
 const Time = () => {
     return(
         <section
-        className={`h-screen ${styles.flexCenter} flex-col relative overflow-hidden`}
+        className={`h-screen ${styles.flexCenter} flex-col relative overflow-hidden `}
         id="section3"
       >
-        <div className="text-5xl text-center font-[Georgia] md:mb-10 mb-20">
+        <div className="text-5xl text-center font-BrunoAce font-bold md:mb-10 mb-20">
           TIMELINE
         </div>
         <div className="relative h-full w-full px-10 md:px-0 lg:p-0 ">
