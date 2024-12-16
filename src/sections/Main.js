@@ -35,7 +35,7 @@ export const Main = () => {
          <button type="submit" className="relative px-4 md:px-14 py-3 font-bold group bg-[#D71015] rounded-xl hover:bg-[#B40E13] active:scale-90 transition-all duration-300 ease-in-out"   style={{
         boxShadow: "2px 2px 0px rgba(255, 255, 255, 0.7)", // Bottom-right shadow with no blur
         }}>
-           <span className="relative text-2xl text-white" style={{WebkitTextStroke: '1px #000000'}}>REGISTER NOW</span>
+           <span className="relative text-xl md:text-2xl text-white" style={{WebkitTextStroke: '1px #000000'}}>REGISTER NOW</span>
          </button>
         </div>
         {/* <div className="flex flex-col md:flex-row lg:flex-row">
