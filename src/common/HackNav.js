@@ -42,7 +42,7 @@ const HackNav = () => {
         <div className="font-bold text-2xl pt-2 cursor-pointer flex items-center font-[Poppins] text-white">
           <span className="text-3xl text-white mr-1">
             <Link to="section1" spy={true} smooth={true} offset={-70} duration={500}>
-              <img src={clglogo} alt="" className="h-[40px] w-[90px]" />
+              <img src={clglogo} alt="" className="h-[50px] w-[90px]" />
             </Link>
           </span>
           
