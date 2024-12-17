@@ -32,7 +32,7 @@ const About = () => {
           meets opportunity, pushing the boundaries of innovation to new heights.
         </div>
         <Link className='hover:underline text-[#D71015] underline-offset-4'
-          to="https://drive.google.com/file/d/1AozPaKCcWnJ1RZVRXadF_htRIwFbVXUA/view?usp=drive_link"
+          to="https:registration.ieeesbmits.in"
         >
           <span className="text-xl py-4 text-[#D71015] ">View Guidelines</span>
         </Link>
