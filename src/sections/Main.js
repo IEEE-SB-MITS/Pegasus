@@ -39,6 +39,7 @@ export const Main = () => {
          </button>
         </div>
         </a>
+        <a href='https://registration.ieeesbmits.in/login' className='text-white'>Already Registered? <span className='text-[#D71015]'>Login</span></a>
         {/* <div className="flex flex-col md:flex-row lg:flex-row">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSeNyLyP_ZdXLlohgDXZWKi8IWcG7CXCWOUCbd-LENOscQIc-w/viewform?usp=sf_link"
