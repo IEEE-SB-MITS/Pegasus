@@ -1,0 +1,24 @@
+/*Marquee*/
+.marquee {
+    position: relative;
+    color: #E0EEEE;
+    padding: 0 0;
+    font-weight: 600;
+    /* font-size: clamp(60px, 10vw, 100px); */
+    /* text-transform: uppercase; */
+    overflow: hidden;
+  }
+  
+  .marqueeInner {
+    display: flex;
+    width: fit-content;
+    flex: auto;
+    flex-direction: row;
+  }
+  
+  .marqueePart{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 4px;
+  }

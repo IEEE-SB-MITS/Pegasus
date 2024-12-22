@@ -8,7 +8,8 @@ const Links = [
   { name: "Home", link: "section1" },
   { name: "About", link: "section2" },
   { name: "Timeline", link: "section3" },
-  // { name: "Partners ", link: "section4" },
+  { name: "Events", link: "section4" },
+  { name: "Partners ", link: "section6" },
   { name: "Contact", link: "section5" },
 ];
 
@@ -43,7 +44,7 @@ const HackNav = () => {
           <span className="text-3xl text-white mr-1">
             <Link to="section1" spy={true} smooth={true} offset={-70} duration={500}>
             
-              <img src={clglogo} alt="" className=" w-[90px]" />
+              <img src={clglogo} alt="" className=" w-[80px]" />
             </Link>
           </span>
           
@@ -83,10 +84,10 @@ const HackNav = () => {
         </ul> */}
 
         <ul
-          className={`hidden md:flex text-[#E2DCD0] gap-14  items-center pb-0 static rounded-b-2xl font-medium text-center  z-auto  left-0 w-auto pl-0 pr-10 transition-all duration-500 ease-in`}
+          className={`hidden md:flex text-[#E2DCD0] gap-8  items-center pb-0 static rounded-b-2xl font-medium text-center  z-auto  left-0 w-auto pl-0 pr-10 transition-all duration-500 ease-in`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-8 text-xl md:m-0 my-7 hover:scale-x-110 cursor-pointer transition-all ease-in-out duration-300">
+            <li key={link.name} className="md:ml-8 text-xl md:m-0 my-7 hover:scale-x-110 cursor-pointer transition-all ease-in-out duration-300 w-20">
               <Link
                 to={link.link}
                 spy={true}
@@ -120,7 +121,7 @@ const Nav = ({active, setIsActive}) => {
     className={`bg-[#020202] absolute overflow-hidden right-0 w-full flex justify-center transition-all ease-in-out duration-300 top-[70px] ${!active? 'h-0': 'h-screen-minus-80'}`}>
         <nav className=" list-none flex flex-col justify-evenly text-center text-white items-center text-[40px] font-[300px] h-full w-full mx-10">
         {Links.map((link) => (
-            <li key={link.name} className="text-4xl w-full px-10">
+            <li key={link.name} className="text-3xl w-full px-8">
               <Link
                 to={link.link} // Use the link property as the target section ID
                 spy={true}
@@ -128,7 +129,7 @@ const Nav = ({active, setIsActive}) => {
                 offset={-70}
                 duration={500}
                 onClick={() =>{setIsActive(false)}}
-                className="block border-b-[1px] py-6 w-full border-white/40 cursor-pointer"
+                className="block border-b-[1px] py-4 w-full border-white/40 cursor-pointer"
               >
                 {link.name}
               </Link>

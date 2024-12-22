@@ -22,8 +22,8 @@ export const Main = () => {
         className="absolute h-2/6 md:h-1/2 lg:h-1/2  -right-24 bottom-4 spinner"
       />
       <div className="h-full w-full flex flex-col justify-center items-center">
-        <div id="logo" >
-          <img src={logo} alt="logo" className="h-[180px] md:h-[380px] object-contain"  />
+        <div id="logo"  className='mt-10'>
+          <img src={logo} alt="logo" className="h-[180px] md:h-[320px] object-contain"  />
         </div>
         <div id="text" className="text-center mb-5 -mt-10">
           <h1 className="md:text-5xl text-3xl font-bold font-BrunoAce">HACKATHON</h1>
@@ -32,7 +32,7 @@ export const Main = () => {
         <h1 className='py-5 font-BrunoAce text-white md:text-2xl text-center' style={{WebkitTextStroke: '0.5px #D71015'}}>THEME : INCLUSIVE TECHNOLOGIES AND INNOVATION</h1>
         <a href='https://registration.ieeesbmits.in'>
         <div className='flex py-4 p-2 col-span-2'>
-         <button type="submit"  className="relative px-4 md:px-14 py-3 font-bold group bg-[#D71015] rounded-xl hover:bg-[#B40E13] active:scale-90 transition-all duration-300 ease-in-out"   style={{
+         <button type="submit"  className="relative px-4 md:px-12 py-3 font-bold group bg-[#D71015] rounded-xl hover:bg-[#B40E13] active:scale-90 transition-all duration-300 ease-in-out"   style={{
         boxShadow: "2px 2px 0px rgba(255, 255, 255, 0.7)", // Bottom-right shadow with no blur
         }}>
            <span className="relative text-xl md:text-2xl text-white" style={{WebkitTextStroke: '1px #000000'}}>REGISTER NOW</span>
@@ -40,27 +40,6 @@ export const Main = () => {
         </div>
         </a>
         <a href='https://registration.ieeesbmits.in/login' className='text-white'>Already Registered? <span className='text-[#D71015]'>Login</span></a>
-        {/* <div className="flex flex-col md:flex-row lg:flex-row">
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeNyLyP_ZdXLlohgDXZWKi8IWcG7CXCWOUCbd-LENOscQIc-w/viewform?usp=sf_link"
-            id="myRegBtn"
-            className="m-6"
-          >
-            <i></i>
-            <i></i>
-            <span>EXPO</span>
-          </a>
-          <a
-            // href="https://unstop.com/o/kgSuwrN?lb=IvoS6d15&utm_medium=Share&utm_source=shortUrl"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfLunQ7pHimLuQn3sS6I3Yc7E5IIqc7g3P5gi_mV3JpXMEByA/viewform"
-            id="myRegBtn"
-            className="m-6"
-          >
-            <i></i>
-            <i></i>
-            <span>HACK</span>
-          </a>
-        </div> */}
       </div>
     </div>
   </section>

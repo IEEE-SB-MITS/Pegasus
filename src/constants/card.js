@@ -1,35 +1,78 @@
-import React from 'react';
-import { call, mail } from '../assets';
+import React, { forwardRef, useState } from 'react'
+import './events.css'
+import bat from '../assets/Instagram_46.png'
 
-const ContactCard = (props) => {
- 
+const Card = forwardRef(({id,frontAlt,frontSrc,backText},ref) => {
   return (
-    <div className="card mx-10 my-3 md:my-10 lg:my-10">
-      <img src={props.img} className="card-img" alt="" />
-      <div className="card-body p-4">
-        <p className="card-sub-title w-1/2">{props.position}</p>
-        <h1 className={`card-title text-${props.size} pt-4`}>{props.name}</h1>
-        <div className="w-full h-full flex flex-row items-center justify-center">
-          <a href={`tel:${props.number}`} className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-            <img
-              src={call}
-              alt=""
-              className="w-[30%]"
-              style={{ filter: "invert(20)" }}
-            />
-          </a>
-          <a href={`mailto:${props.mail}`} className="card-button mx-4 py-4 w-[35%] flex items-center justify-center">
-            <img
-              src={mail}
-              alt=""
-              className="w-[30%]"
-              style={{ filter: "invert(20)" }}
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
+    <div className='rcard' id={id} ref={ref}>
+        <div className='card-wrapper'>
+            <div className='flip-card-inner'>
+                <div className='flip-card-front'>
+                    <img className='cardImage'
+                    src={frontSrc}
+                    width={500}
+                    height={500}
+                    alt={frontAlt}
+                    loading='eager'
+                    />
+                </div>
+                <div className='flip-card-back flex flex-col gap-2'>
+                    <div className='h-2/3'>
+                        <img src={bat} className='h-full w-full object-contain rounded-md'></img>
+                    </div>
+                    <div className=' text-center'>
+                        <h2 className='text-[#030202] text-2xl font-semibold font-mono'>INNOVISION</h2>
+                        <p className='text-[#030202] text-sm font-ProductSans'>AI Video generating challenge</p>
+                        
+                        <a href='https://bit.ly/InnovisionRegistration' target='_blank'>
+                        <button type="submit"  className="mt-2 px-4 py-1 font-bold group bg-transparent text-[#D71015] border border-black rounded-xl hover:bg-[#B40E13] hover:text-[#030202] active:scale-90 transition-all duration-300 ease-in-out" >
+                        <span className="text-md font-bold" style={{WebkitTextStroke: '0.5px #000000'}}>REGISTER NOW</span>
+                        </button>
+                        </a>
 
-export default ContactCard;
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+  )
+});
+
+export default Card
+
+
+// const Card = ({id,frontAlt,frontSrc,backText}) => {
+//     return (
+//       <div className='rcard' id={id} >
+//           <div className='card-wrapper'>
+//               <div className='flip-card-inner'>
+//                   <div className='flip-card-front'>
+//                       <img className='cardImage'
+//                       src={frontSrc}
+//                       width={500}
+//                       height={500}
+//                       alt={frontAlt}
+//                       loading='eager'
+//                       />
+//                   </div>
+//                   <div className='flip-card-back'>
+//                       <div className=' text-center relative w-full h-full flex flex-col justify-center items-center'>
+//                           <h2 className='text-[#030202] text-3xl font-semibold font-mono'>INNOVISION</h2>
+//                           <p className='text-[#030202]/80 text-sm'>AI Video generating challenge</p>
+//                           <p>Theme:</p>
+//                           <p> Future Technology</p>
+//                           <a href='https://bit.ly/InnovisionRegistration' target='_blank'>
+//                           <button type="submit"  className="absolute bottom-2 left-2 px-4 py-1 font-bold group bg-transparent text-[#D71015] border border-black rounded-xl hover:bg-[#B40E13] hover:text-[#030202] active:scale-90 transition-all duration-300 ease-in-out" >
+//                           <span className="text-md font-bold" style={{WebkitTextStroke: '0.5px #000000'}}>REGISTER NOW</span>
+//                           </button>
+//                           </a>
+  
+//                       </div>
+//                   </div>
+//               </div>  
+//           </div>
+//       </div>
+//     )
+//   };
+  
+//   export default Card

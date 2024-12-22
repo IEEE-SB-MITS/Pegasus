@@ -38,10 +38,6 @@ const About = () => {
         </Link>
       </div>
     </div>
-    {/* <div className="md:hidden lg:hidden absolute bottom-32 text-2xl text-pink-700 font-mono">
-    <Marquee > -  DON'T FORGET TO REGISTER BEFORE 16TH NOVEMBER - 
-      </Marquee>
-      </div> */}
   </section>
   )
 }

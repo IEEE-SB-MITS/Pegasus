@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@gsap/react": "^2.1.1",
     "@react-hook/media-query": "^1.1.1",
+    "@studio-freight/react-lenis": "^0.0.47",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -11,7 +13,7 @@
     "cobe": "^0.6.3",
     "framer": "^2.4.1",
     "framer-motion": "^10.16.4",
-    "gsap": "^3.12.2",
+    "gsap": "^3.12.5",
     "jquery": "^3.7.1",
     "material-icons": "^1.13.12",
     "node-compass": "^0.2.4",

@@ -1,52 +1,180 @@
-.card {
-    width: 190px;
-    height: 254px;
-    background: #07182E;
+/*PRE EVENTS*/
+
+.cardImage{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.rcard{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: clamp(180px, 20vw, 240px);  */
+  /* Min 180px, max 240px, adjusts with viewport */
+  /* height: clamp(280px, 30vw, 360px);  */
+  width: 260px;
+  height: 365px;
+  perspective: 1000px;
+}
+
+
+/* .rcard p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+} */
+
+.card-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*center*/
+  width: 100%;
+  height: 100%;
+  /* animation: floating 3s infinite ease-in-out; */
+}
+
+@media(max-width: 768px){
+  .card-wrapper{
+    animation: none;
+    position: static;
+    transform: none;
+  }
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    position: relative;
+    padding: 10px;
+
+  }
+
+  .rcard{
+    position: static;
+    transform: none;
+  }
+}
+
+@media(max-width: 768px){
+  .rcard{
+    width: 240px;
+    height: 345px;
+  }
+} 
+
+#card-1 .card-wrapper{
+  animation-delay: 0s;
+}
+
+#card-2 .card-wrapper{
+  animation-delay: 0.2s;
+}
+#card-3 .card-wrapper{
+  animation-delay: 0.4s;
+}
+#card-4 .card-wrapper{
+  animation-delay: 0.6s;
+}
+
+
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.flip-card-back{
+  padding: 1rem;
+  background-color: #E2DCD0;
+  transform: rotateY(180deg);
+}
+
+
+@keyframes floating{
+  0%{
+    transform: translate(-50%, -50%);
+  }
+
+  50%{
+    transform: translate(-50%, -60%);
+  }
+
+  100%{
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+
+
+
+/* Timeline.css */
+
+
+.timeline {
     position: relative;
     display: flex;
-    place-content: center;
-    place-items: center;
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  
-  .card h2 {
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+
+.timeline-line {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    width: 2px;
+    background-color: white;
+}
+
+.timeline-event {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 75px;
+    justify-content: center;
+    margin: 20px 0;
+    background-color: white;
+    /* border: 2px solid #D71015; */
+}
+
+
+
+.timeline-connector {
+    position: absolute;
+    top: 129%;
+    left: 50.4%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
     z-index: 1;
-    color: white;
-    font-size: 2em;
-  }
-  
-  .card::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-    height: 130%;
-    animation: rotBGimg 3s linear infinite;
-    transition: all 0.2s linear;
-  }
-  
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .card::after {
-    content: '';
-    position: absolute;
-    background: #07182E;
-    ;
-    inset: 5px;
-    border-radius: 15px;
-  }  
-  /* .card:hover:before {
-    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
-    animation: rotBGimg 3.5s linear infinite;
-  } */
-  
-  
+}

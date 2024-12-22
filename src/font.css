@@ -23,3 +23,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+@font-face {
+    font-family: 'Dirtyline';
+    src: url('./assets/font/Dirtyline.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
