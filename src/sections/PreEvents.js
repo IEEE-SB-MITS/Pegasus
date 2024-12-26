@@ -5,6 +5,24 @@ import cardFront from '../assets/CardCover.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import inn from '.././assets/Instagram_46.png';
+import mind from '.././assets/mindspark.png'
+
+const events = [
+  {
+    title: "INNOVISION",
+    desc: "AI Video generating challenge",
+    link: "https://bit.ly/InnovisionRegistration",
+    poster: inn
+  },
+  {
+    title: "MINDSPARK",
+    desc: "Ideathon",
+    link: "https://bit.ly/IEEEMindSpark",
+    poster: mind
+  },
+]
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,14 +68,17 @@ const PreEvents = () => {
   },{scope: container})
   return (
     <ReactLenis root>
-    <div ref={container} className='cards relative min-h-[500px]'>
-        {[...Array(1)].map((_,index) =>(
+    <div ref={container} className='cards relative min-h-[500px] my-10 gap-10 md:gap-28'>
+        {events.map((event,index) =>(
             <Card
             key={index}
             id={`card-${index+1}`}
             frontSrc={cardFront}
             frontAlt='Card image'
-            backText='Card Info'
+            title={event.title}
+            desc={event.desc}
+            link={event.link}
+            poster = {event.poster}
             ref={(el)=>(cardRefs.current[index] = el)}
             />
         ))}

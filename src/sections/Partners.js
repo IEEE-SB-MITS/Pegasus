@@ -3,7 +3,7 @@ import ISHRAE from "../assets/ISHRAE.png";
 
 const Partners = () => {
   return (
-  <section id="section6" className="flex flex-col gap-20 mb-24 -mt-10">
+  <section id="section6" className="flex flex-col gap-20 mb-24">
     <div className="w-full flex flex-col justify-center items-center md:pt-10 ">
       <h1 className="text-2xl md:text-4xl font-bold font-BrunoAce">OUR PARTNERS</h1>
     </div>
