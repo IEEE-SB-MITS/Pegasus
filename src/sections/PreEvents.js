@@ -1,6 +1,6 @@
 import ReactLenis from '@studio-freight/react-lenis'
 import React, { useRef } from 'react'
-import Card from '../constants/Card'
+import Card from '../constants/card'
 import cardFront from '../assets/CardCover.png'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
