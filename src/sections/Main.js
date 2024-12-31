@@ -30,7 +30,7 @@ export const Main = () => {
         </div>
 
         <h1 className='py-5 font-BrunoAce text-white md:text-2xl text-center' style={{WebkitTextStroke: '0.5px #D71015'}}>THEME : INCLUSIVE TECHNOLOGIES AND INNOVATION</h1>
-        <a href='https://registration.ieeesbmits.in'>
+        <a href='#'>
         <div className='flex py-4 p-2 col-span-2'>
          <button type="submit"  disabled className="relative px-4 md:px-12 py-3 font-bold group bg-[#D71015] rounded-xl hover:bg-[#B40E13]  transition-all duration-300 ease-in-out disabled:bg-[#767575] disabled:opacity-80 disabled:cursor-not-allowed"   style={{
         boxShadow: "2px 2px 0px rgba(255, 255, 255, 0.7)", // Bottom-right shadow with no blur
