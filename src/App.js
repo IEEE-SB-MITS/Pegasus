@@ -26,7 +26,7 @@ import Preloader from "./constants/preloader";
 
 function App() {
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-black text-white text-6xl font-bold  font-Dirtyline">
+    <div className="w-screen h-screen text-center flex items-center justify-center bg-black text-white text-7xl font-bold uppercase font-mono">
       coming soon
     </div>
   );
