@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styles from "../../constants/style";
 // import { motion, AnimatePresence } from 'framer-motion';
 import { logo, ball, aboutusImg, mail, call, sideball } from "../../assets";
-import ContactCard from "../../constants/card";
+import ContactCard from "../../constants/Card";
 import Timeline from "../../constants/Timeline";
 import ras from "../../assets/RAS CHAPTER.svg";
 import keralasec from "../../assets/kerala-section.svg";
