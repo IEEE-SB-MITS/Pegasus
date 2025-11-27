@@ -1,6 +1,9 @@
 {
   "name": "pegasus",
   "version": "0.1.0",
+  "engines": {
+    "node": "24.x"
+  },
   "private": true,
   "dependencies": {
     "@gsap/react": "^2.1.1",
