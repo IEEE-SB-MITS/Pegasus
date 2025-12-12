@@ -50,12 +50,12 @@ const Expo = () => {
 
       <Time/>
 
-      <section id="section4" className="min-h-screen">
+      {/* <section id="section4" className="min-h-screen">
         <div className="w-full flex flex-col justify-center items-center md:pt-10 ">
           <h1 className="text-2xl md:text-4xl font-bold font-BrunoAce">PRE EVENTS</h1>
         </div>
         <PreEvents/>
-      </section> 
+      </section>  */}
       
       <Partners/>
       
