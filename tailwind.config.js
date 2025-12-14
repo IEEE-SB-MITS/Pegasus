@@ -3,6 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./src/**/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        BrunoAce: ['BrunoAce', 'sans-serif'], 
+        ProductSans: ['ProductSans', 'sans-serif'],
+        Dirtyline: ['Dirtyline','sans-serif'],
+        ITCMedium: ['ITCMedium', 'sans-serif'],
+        AvantM: ['AvantM', 'sans-serif'],
+        RobotoSlab: ['RobotoSlab', 'sans-serif'],
+        Orbitron: ['Orbitron', 'sans-serif']
+      },
       keyframes: {
         fog: {
           "0%": { transform: "translateX(0) translateY(0)" },

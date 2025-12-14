@@ -49,11 +49,11 @@ const Expo = () => {
         <PreEvents/>
       </section>  */}
 
-      <Partners />
+      {/* <Partners /> */}
 
       <section id="section5">
         <div className="relative w-full flex flex-col justify-center items-center md:pt-10 pb-14">
-          <h1 className="text-2xl md:text-4xl font-bold font-BrunoAce">
+          <h1 className="text-4xl md:text-5xl font-bold font-ITCMedium tracking-wide">
             CONTACT US
           </h1>
           <div className="lg:hidden text-md">( Tap the card to contact )</div>

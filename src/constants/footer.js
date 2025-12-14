@@ -10,7 +10,7 @@ const Myfooter = () => {
         <span
           className={`text-sm text-gray-500 ${styles.flexCenter} sm:text-center dark:text-gray-400`}
         >
-          © 2024{"  "}
+          © 2025{"  "}
           <a href="https://ieeesbmits.in/" className="hover:underline">
             &nbsp; IEEE SB MITS
           </a>

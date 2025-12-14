@@ -4,59 +4,88 @@ export const Main = () => {
   return (
     <section
       id="section1"
-      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center"
+      className="relative min-h-screen w-full overflow-hidden flex items-center justify-center px-6"
     >
-      <div className="relative z-10 h-full w-full flex flex-col justify-center items-center text-white">
+      {/* Background spotlight */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(215,16,21,0.18),transparent_60%)]" />
+
+    
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center text-center text-white animate-[fadeIn_1s_ease-out]">
+
+        {/* Logo */}
         <img
           src={logo}
-          alt="logo"
-          id="peg4logo"
-          className="h-[160px] md:h-[200px] object-contain mt-20"
+          alt="PEGASUS Logo"
+          className="h-[160px] md:h-[200px] object-contain mb-6 mt-20"
         />
 
+        {/* Hackathon Title */}
         <h1
-          className="md:text-5xl text-3xl font-bold font-BrunoAce mt-4 tracking-widest"
+          className="
+            font-RobotoSlab
+            md:text-6xl text-4xl
+            tracking-[0.2em]
+            font-bold
+            mb-4
+          "
           style={{
-            color: "#FFFFFF", // bright white
-            opacity: 0.9,
-            WebkitTextStroke: "0.5px #D71015",
+            textShadow: "0 0 10px rgba(255,255,255,0.15)",
           }}
         >
           HACKATHON
         </h1>
 
+        {/* Theme */}
         <h2
-          className="py-5 font-BrunoAce md:text-2xl text-center"
-          style={{
-            color: "#FFFFFF", // soft pink
-            WebkitTextStroke: "0.5px #D71015",
-          }}
+          className="
+            font-RobotoSlab
+            text-sm md:text-base
+            tracking-widest
+            text-gray-300
+            mb-6
+          "
         >
-          THEME : INCLUSIVE TECHNOLOGIES AND INNOVATION
+          THEME : OPEN INNOVATION
         </h2>
 
-        <button
-          className="px-9 py-3 rounded-xl text-lg font-semibold tracking-wider
-         text-red-100
-         bg-[#5B1515]
-         border border-red-600
-         shadow-[0_0_14px_rgba(255,0,0,0.25)]
-         transform transition-all duration-300 ease-out
-         hover:-translate-y-1
-         hover:bg-transparent
-         hover:text-red-300
-         hover:shadow-[0_0_36px_rgba(255,0,0,0.6)]"
-        >
-          <span className="text-xl md:text-2xl">REGISTER HERE</span>
-        </button>
+        {/* Divider */}
+        <div className="w-24 h-[1px] bg-red-600/60 mb-8" />
 
+        {/* Register Button */}
+        <a href="https://registration.ieeesbmits.in">
+          <button
+            className="
+              font-RobotoSlab
+              px-12 py-3
+              rounded-lg
+              border border-red-600
+              text-red-200
+              tracking-[0.25em]
+              uppercase
+              transition-all duration-300 ease-out
+              hover:bg-red-600/20
+              hover:text-white
+              hover:shadow-[0_0_25px_rgba(215,16,21,0.5)]
+              active:scale-95
+            "
+          >
+            REGISTER HERE
+          </button>
+        </a>
+
+        {/* Login */}
         <a
           href="https://registration.ieeesbmits.in/login"
-          className="mt-4 text-white"
+          className="mt-5 text-sm text-gray-400"
         >
-          Already Registered? <span className="text-[#D71015]">Login</span>
+          Already Registered?{" "}
+          <span className="text-[#D71015] hover:underline">
+            Login
+          </span>
         </a>
       </div>
+
     </section>
   );
 };

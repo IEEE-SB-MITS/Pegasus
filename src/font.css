@@ -32,3 +32,32 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+@font-face {
+  font-family: 'ITCMedium';
+  src: url('./assets/font/ITCMedium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvantM';
+  src: url('./assets/font/AvantM.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./assets/font/Orbitron.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url('./assets/font/RobotoSlab.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
