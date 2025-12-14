@@ -8,8 +8,8 @@ const Links = [
   { name: "Home", link: "section1" },
   { name: "About", link: "section2" },
   { name: "Timeline", link: "section3" },
-  { name: "Events", link: "section4" },
-  { name: "Partners ", link: "section6" },
+  // { name: "Events", link: "section4" },
+  // { name: "Partners ", link: "section6" },
   { name: "Contact", link: "section5" },
 ];
 
@@ -38,7 +38,7 @@ const HackNav = () => {
     <div className="w-full fixed top-0 left-0 z-50 font-ProductSans">
       
       <div
-        className={`md:flex items-center justify-between ${scrolled ? 'bg-[#020202] text-white' : 'bg-transparent'} py-4 md:px-10 px-7 transition-all ease-in-out duration-300`}
+        className={`md:flex items-center justify-between  ${(scrolled || isActive) ? 'bg-[#020202] text-white' : 'bg-transparent'} py-2 md:px-10 px-7 transition-all ease-in-out duration-300`}
       >
         <div className="font-bold text-2xl pt-2 cursor-pointer flex items-center font-[Poppins] text-white">
           <span className="text-3xl text-white mr-1">
@@ -118,7 +118,7 @@ export default HackNav;
 const Nav = ({active, setIsActive}) => {
   return (
     <div
-    className={`bg-[#020202] absolute overflow-hidden right-0 w-full flex justify-center transition-all ease-in-out duration-300 top-[70px] ${!active? 'h-0': 'h-screen-minus-80'}`}>
+    className={`bg-[#020202] absolute overflow-hidden right-0 w-full flex justify-center transition-all ease-in-out duration-300  ${!active ? 'h-0' : 'h-[calc(100vh-80px)]'}`}>
         <nav className=" list-none flex flex-col justify-evenly text-center text-white items-center text-[40px] font-[300px] h-full w-full mx-10">
         {Links.map((link) => (
             <li key={link.name} className="text-3xl w-full px-8">
