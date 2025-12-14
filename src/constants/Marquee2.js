@@ -54,27 +54,27 @@ const Marquee2 = () => {
 <h3 className='px-5'>-</h3>        </div>
 
         <div className="marqueePart">
-          pegasus 3.0 <h3 className=''>-</h3>
+          pegasus 4.0 <h3 className=''>-</h3>
 
         </div>
 
         <div className="marqueePart">
-          pegasus 3.0 <h3 className='px-5'>-</h3>
+          pegasus 4.0 <h3 className='px-5'>-</h3>
 
         </div>
 
         <div className="marqueePart">
-          pegasus 3.0 <h3 className='px-5'>-</h3>
+          pegasus 4.0 <h3 className='px-5'>-</h3>
 
         </div>
 
         <div className="marqueePart">
-          pegasus 3.0 <h3 className='px-5'>-</h3>
+          pegasus 4.0 <h3 className='px-5'>-</h3>
 
         </div>
 
         <div className="marqueePart">
-          pegasus 3.0 <h3 className='px-5'>-</h3>
+          pegasus 4.0 <h3 className='px-5'>-</h3>
 
         </div>
       </div>

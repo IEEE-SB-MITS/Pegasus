@@ -9,7 +9,7 @@ const Time = () => {
         className={`min-h-screen ${styles.flexCenter} flex-col relative overflow-hidden mb-28`}
         id="section3"
       >
-        <div className="text-3xl md:text-4xl text-center font-BrunoAce font-bold md:mb-10 mb-10">
+        <div className="text-4xl md:text-6xl font-bold font-ITCMedium text-center tracking-wide md:mb-10 mb-10">
           TIMELINE
         </div>
         <div className="relative h-full w-full px-10 md:px-0 lg:p-0 ">

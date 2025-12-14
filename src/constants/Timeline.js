@@ -2,17 +2,17 @@ import React, { useEffect, useRef } from 'react'
 import './events.css'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import '../assets/pooja.jpg'
+
 const time = [
   {
     id: 1,
     title: 'Application Starts',
-    date: '17 Dec'
+    date: '15 Dec'
   },
   {
     id: 2,
     title: 'Application Ends',
-    date: '29 Dec'
+    date: '31 Dec'
   },
   {
     id: 3,
@@ -22,12 +22,12 @@ const time = [
   {
     id: 4,
     title: 'Event Starts',
-    date: '10 Jan'
+    date: '16 Jan'
   },
   {
     id: 5,
     title: 'Event Ends',
-    date: '11 Jan'
+    date: '17 Jan'
   }
 ]
 

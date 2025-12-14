@@ -4,19 +4,19 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 
 body {
@@ -26,7 +26,7 @@ body {
   /* background: #1F0120; */
   background: #000;
   color: white;
-  
+
   /* Additional CSS properties go here */
 }
 ::-webkit-scrollbar {
@@ -37,7 +37,7 @@ body {
   --x: 45deg; /* Set the initial value of --x */
 }
 
- #myRegBtn{
+#myRegBtn {
   position: relative;
   width: 250px;
   height: 85px;
@@ -46,111 +46,118 @@ body {
   @media screen and (max-width: 768px) {
     width: 150px;
     height: 55px;
-    
   }
-
-  }
-  #myRegBtn i{
-      position: absolute;
-      inset: -2px;
-      display: block;
-      border-radius: 5px;
-  }
-  #myRegBtn i,
-  #myRegBtn i:nth-child(2){
-      background: linear-gradient(var(--x),#00ccff,#1F0120,#1F0120,#d400d4);
-  }
-  #myRegBtn i:nth-child(2){
-      filter:blur(10px)
-  }
-  #myRegBtn span{
-      position:absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase ;
-      color: #FFFFFF;
-      letter-spacing: 2px;
-      border: 1px solid #040a29;
-      border-radius: 3px;
-      background: rgba(14,21,56,0.65);
-      overflow: hidden;
-
-  }
-
-  #myRegBtn span::before{
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -50%;
-      width: 100%;
-      height: 100%;
-     transform: skew(var(--x));
-      background: rgba(255,255,255,0.075);
-  }
-  .spinner{
-    -webkit-animation: spin 8s linear infinite;
-    -moz-animation: spin 8s linear infinite;
-    animation: spin 8s linear infinite;
-  }
-  .spinner-ay{
-    -webkit-animation: axialrotationY 8s linear infinite;
-    -moz-animation: axialrotationY 8s linear infinite;
-    animation: axialrotationY 8s linear infinite;
-  }
-
-@-webkit-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
 }
-@keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+#myRegBtn i {
+  position: absolute;
+  inset: -2px;
+  display: block;
+  border-radius: 5px;
 }
-@-moz-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+#myRegBtn i,
+#myRegBtn i:nth-child(2) {
+  background: linear-gradient(var(--x), #00ccff, #1f0120, #1f0120, #d400d4);
 }
-@-webkit-keyframes axialrotationY{
-  100%{-webkit-transform: rotateY(360deg);}
+#myRegBtn i:nth-child(2) {
+  filter: blur(10px);
 }
-@keyframes axialrotationY{
-  100%{-webkit-transform: rotateY(360deg);}
-}
-@-moz-keyframes axialrotationY{
-  100%{-webkit-transform: rotateY(360deg);}
+#myRegBtn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  border: 1px solid #040a29;
+  border-radius: 3px;
+  background: rgba(14, 21, 56, 0.65);
+  overflow: hidden;
 }
 
-.card{
+#myRegBtn span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  transform: skew(var(--x));
+  background: rgba(255, 255, 255, 0.075);
+}
+.spinner {
+  -webkit-animation: spin 8s linear infinite;
+  -moz-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+}
+.spinner-ay {
+  -webkit-animation: axialrotationY 8s linear infinite;
+  -moz-animation: axialrotationY 8s linear infinite;
+  animation: axialrotationY 8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes axialrotationY {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@keyframes axialrotationY {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@-moz-keyframes axialrotationY {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+.card {
   width: 250px;
   height: 350px;
   border-radius: 20px;
   overflow: hidden;
-  border:  2px solid white;
+  border: 2px solid white;
   position: relative;
-
 }
 
-.card-img{
+.card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-
 }
 
-.card-body{
+.card-body {
   width: 100%;
   height: 100%;
-  right:0;
-  top : 80%;
+  right: 0;
+  top: 80%;
   position: absolute;
-  background:#1f01207e;
+  background: #1f01207e;
   /* backdrop-filter: blur(5px); */
   border-radius: 15px;
-  color:white;
-  padding:15px;
+  color: white;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,29 +165,26 @@ body {
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 100%;
-    right:0;
-    top : 80%
-    
+    right: 0;
+    top: 80%;
   }
 }
-.card:hover .card-body{
-top:0;
+.card:hover .card-body {
+  top: 0;
   @media screen and (max-width: 768px) {
     top: 0;
-    
   }
-
 }
-.card-title{
+.card-title {
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 800;
-  font-family: 'Lato';
+  font-family: "Lato";
   line-height: 50px;
 }
 
-.card-sub-title{
-  padding-top:6px;
+.card-sub-title {
+  padding-top: 6px;
   text-transform: uppercase;
   font-size: 20px;
   display: flex;
@@ -190,24 +194,23 @@ top:0;
   font-weight: 600;
 }
 
-.card-infor{
+.card-infor {
   font-size: 16px;
   line-height: 25px;
-  margin:50px 0;
+  margin: 50px 0;
   font-weight: 300;
 }
 
-.card-button{
+.card-button {
   background-color: #c100c47e;
   text-transform: capitalize;
   outline: none;
-  border:none;
+  border: none;
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
-  border-radius: 20px
+  border-radius: 20px;
 }
-
 
 /* loading.css */
 .loading-container {
@@ -228,8 +231,10 @@ top:0;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-
