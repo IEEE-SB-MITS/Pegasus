@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "../constants/style";
 import { logo, ball, aboutusImg, mail, call, sideball } from "../assets";
-import { Link } from 'react-router-dom';
 
 const About = () => {
   return(
