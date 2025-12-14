@@ -36,18 +36,18 @@ export const Main = () => {
         </h2>
 
         <button
-          disabled
-          className="relative px-6 md:px-12 py-3 font-bold bg-[#A71F1F] rounded-xl hover:bg-[#D10F0F] transition-all duration-300 disabled:bg-[#888888] disabled:opacity-80"
-          style={{
-            boxShadow: "2px 2px 0px rgba(255,255,255,0.7)",
-          }}
+          className="px-9 py-3 rounded-xl text-lg font-semibold tracking-wider
+         text-red-100
+         bg-[#5B1515]
+         border border-red-600
+         shadow-[0_0_14px_rgba(255,0,0,0.25)]
+         transform transition-all duration-300 ease-out
+         hover:-translate-y-1
+         hover:bg-transparent
+         hover:text-red-300
+         hover:shadow-[0_0_36px_rgba(255,0,0,0.6)]"
         >
-          <span
-            className="text-xl md:text-2xl"
-            style={{ WebkitTextStroke: "1px #000" }}
-          >
-            REGISTRATIONS CLOSED
-          </span>
+          <span className="text-xl md:text-2xl">REGISTER HERE</span>
         </button>
 
         <a
