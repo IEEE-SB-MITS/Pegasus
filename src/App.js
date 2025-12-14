@@ -5,14 +5,13 @@ import HackNav from "./common/HackNav";
 import Expo from "./pages/expo/expo";
 
 import { Routes, Route } from "react-router-dom";
-
+import Background from "./common/Background";
 import Preloader from "./constants/preloader";
 
 function App() {
-
   return (
     <>
-   
+      <Background />
       <Preloader />
       <div className="App ">
         <Routes>
@@ -23,6 +22,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;

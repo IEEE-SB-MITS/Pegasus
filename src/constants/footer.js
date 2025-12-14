@@ -3,9 +3,13 @@ import styles from "./style";
 
 const Myfooter = () => {
   return (
-    <footer className={`w-full h-full flex items-center  rounded-lg shadow p-4 `}>
+    <footer
+      className={`relative w-full h-full flex items-center  rounded-lg shadow p-4 `}
+    >
       <div className="w-full mx-auto max-w-screen-xl py-5 md:flex md:items-center md:justify-between">
-        <span className={`text-sm text-gray-500 ${styles.flexCenter} sm:text-center dark:text-gray-400`}>
+        <span
+          className={`text-sm text-gray-500 ${styles.flexCenter} sm:text-center dark:text-gray-400`}
+        >
           © 2024{"  "}
           <a href="https://ieeesbmits.in/" className="hover:underline">
             &nbsp; IEEE SB MITS
@@ -14,7 +18,10 @@ const Myfooter = () => {
         </span>
         <ul className="flex flex-wrap items-center md:justify-normal justify-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>
-            <a href="#section2" className="hover:underline md:ms-4 lg:ms-4 me-4 md:me-6">
+            <a
+              href="#section2"
+              className="hover:underline md:ms-4 lg:ms-4 me-4 md:me-6"
+            >
               &nbsp;About
             </a>
           </li>
