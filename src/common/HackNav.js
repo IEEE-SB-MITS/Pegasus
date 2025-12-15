@@ -1,5 +1,5 @@
 import React, { act, useEffect, useState } from "react";
-import { clglogo } from "../assets";
+import clglogo from "../assets/ieeewhite.png";
 import styles from "./nav.css";
 import { Link } from "react-scroll"; 
 import DateExtended from "./extension";
@@ -44,7 +44,7 @@ const HackNav = () => {
           <span className="text-3xl text-white mr-1">
             <Link to="section1" spy={true} smooth={true} offset={-70} duration={500}>
             
-              <img src={clglogo} alt="" className=" w-[80px]" />
+              <img src={clglogo} alt="" className=" w-[65px]" />
             </Link>
           </span>
           
