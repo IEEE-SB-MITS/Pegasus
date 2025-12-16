@@ -7,7 +7,7 @@ const time = [
   {
     id: 1,
     title: 'Application Starts',
-    date: '15 Dec'
+    date: '20 Dec'
   },
   {
     id: 2,
@@ -22,12 +22,12 @@ const time = [
   {
     id: 4,
     title: 'Event Starts',
-    date: '16 Jan'
+    date: '30 Jan'
   },
   {
     id: 5,
     title: 'Event Ends',
-    date: '17 Jan'
+    date: '31 Jan'
   }
 ]
 
