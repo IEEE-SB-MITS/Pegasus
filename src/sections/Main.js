@@ -1,4 +1,4 @@
-import logo from "../assets/peg4logo.png";
+import logo from "../assets/logo4.png";
 
 export const Main = () => {
   return (
@@ -8,7 +8,6 @@ export const Main = () => {
     >
       {/* Background spotlight */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(215,16,21,0.18),transparent_60%)]" />
-
     
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center text-white animate-[fadeIn_1s_ease-out]">
@@ -17,14 +16,14 @@ export const Main = () => {
         <img
           src={logo}
           alt="PEGASUS Logo"
-          className="h-[160px] md:h-[200px] object-contain mb-6 mt-20"
+          className="h-[200px] md:h-[350px] object-contain md:mb-6 "
         />
 
         {/* Hackathon Title */}
         <h1
           className="
             font-RobotoSlab
-            md:text-6xl text-4xl
+            md:text-6xl text-3xl
             tracking-[0.2em]
             font-bold
             mb-4
