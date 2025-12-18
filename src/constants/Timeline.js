@@ -12,7 +12,7 @@ const time = [
   {
     id: 2,
     title: 'Application Ends',
-    date: '31 Dec'
+    date: '9 Jan'
   },
   {
     id: 3,
