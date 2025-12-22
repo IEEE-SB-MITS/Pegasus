@@ -77,7 +77,7 @@ export const Main = () => {
           disabled
           className="
             font-RobotoSlab
-            px-12 py-3
+            px-4 md:px-12 py-3
             rounded-lg
             border border-red-600
             text-red-200
