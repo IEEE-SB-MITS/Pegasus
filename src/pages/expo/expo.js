@@ -11,6 +11,7 @@ import Marquee1 from "../../constants/Marquee1";
 import Marquee2 from "../../constants/Marquee2";
 import PreEvents from "../../sections/PreEvents";
 import Partners from "../../sections/Partners";
+import logo from "../../assets/logo/mitsnew.png";
 
 const Expo = () => {
   useEffect(() => {
@@ -49,7 +50,7 @@ const Expo = () => {
         <PreEvents/>
       </section>  */}
 
-      {/* <Partners /> */}
+      <Partners />
 
       <section id="section5">
         <div className="relative w-full flex flex-col justify-center items-center md:pt-10 pb-14">
