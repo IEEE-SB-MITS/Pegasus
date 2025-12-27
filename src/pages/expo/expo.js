@@ -35,7 +35,7 @@ const Expo = () => {
   return (
     <div id="maindiv">
       <Main />
-
+            <Partners/>
       <About />
 
       <Marquee1 />
@@ -49,8 +49,6 @@ const Expo = () => {
         </div>
         <PreEvents/>
       </section>  */}
-
-      <Partners />
 
       <section id="section5">
         <div className="relative w-full flex flex-col justify-center items-center md:pt-10 pb-14">

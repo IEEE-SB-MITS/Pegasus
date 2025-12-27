@@ -38,13 +38,13 @@ const HackNav = () => {
     <div className="w-full fixed top-0 left-0 z-50 font-ProductSans">
       
       <div
-        className={`md:flex items-center justify-between  ${(scrolled || isActive) ? 'bg-[#020202] text-white' : 'bg-transparent'} py-2 md:px-10 px-7 transition-all ease-in-out duration-300`}
+        className={`md:flex items-center justify-between  ${(scrolled || isActive) ? 'bg-[#020202] text-white' : 'bg-transparent'} py-6 md:px-10 px-7 transition-all ease-in-out duration-300`}
       >
-        <div className="font-bold text-2xl pt-2 cursor-pointer flex items-center font-[Poppins] text-white">
-          <span className="text-3xl text-white mr-1">
+        <div className="text-base pt-2 cursor-pointer flex items-cente">
+          <span className="text-xl md:text-2xl font-medium text-[#E2DCD0] mr-1 tracking-wide">
             <Link to="section1" spy={true} smooth={true} offset={-70} duration={500}>
-            
-              <img src={clglogo} alt="" className=" w-[65px]" />
+              {/* <img src={clglogo} alt="" className=" w-[65px]" /> */}
+              PEGASUS
             </Link>
           </span>
           
