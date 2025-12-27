@@ -1,5 +1,5 @@
 import React, { act, useEffect, useState } from "react";
-import clglogo from "../assets/ieeewhite.png";
+import clglogo from "../assets/p44.webp";
 import styles from "./nav.css";
 import { Link } from "react-scroll"; 
 import DateExtended from "./extension";
@@ -41,7 +41,7 @@ const HackNav = () => {
         className={`md:flex items-center justify-between  ${(scrolled || isActive) ? 'bg-[#020202] text-white' : 'bg-transparent'} py-6 md:px-10 px-7 transition-all ease-in-out duration-300`}
       >
         <div className="text-base pt-2 cursor-pointer flex items-cente">
-          <span className="text-xl md:text-2xl font-medium text-[#E2DCD0] mr-1 tracking-wide">
+          <span className="text-xl md:text-2xl font-medium text-[#E2DCD0] mr-1 tracking-wide font-ITCMedium">
             <Link to="section1" spy={true} smooth={true} offset={-70} duration={500}>
               {/* <img src={clglogo} alt="" className=" w-[65px]" /> */}
               PEGASUS

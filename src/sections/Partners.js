@@ -7,7 +7,7 @@ import logo2 from "../assets/logo/ieee.png";
 
 const Partners = () => {
   return (
-    <section id="section6" className="relative flex flex-col items-center gap-16 mb-20 md:mt-28">
+    <section id="section6" className="relative flex flex-col items-center gap-16 mb-10 md:mt-28">
 
       {/* Desktop View */}
       <div className="justify-evenly items-center w-full py-16 hidden md:flex px-4">
