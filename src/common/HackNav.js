@@ -8,7 +8,7 @@ const Links = [
   { name: "Home", link: "section1" },
   { name: "About", link: "section2" },
   { name: "Timeline", link: "section3" },
-  // { name: "Events", link: "section4" },
+  { name: "Events", link: "section4" },
   // { name: "Partners ", link: "section6" },
   { name: "Contact", link: "section5" },
 ];
