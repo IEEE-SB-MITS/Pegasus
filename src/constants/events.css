@@ -1,16 +1,106 @@
 /*PRE EVENTS*/
 
+.event-card {
+  width: 320px;
+  background: rgba(9, 0, 9, 0.4);
+  border: 1px solid rgba(220, 38, 38, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(220, 38, 38, 0.8);
+}
+
+.event-poster {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #000;
+}
+
+.event-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 20px;
+}
+
+.event-title {
+  color: #dc2626;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.event-desc {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.event-meta {
+  margin-bottom: 16px;
+}
+
+.meta-item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+}
+
+.meta-label {
+  color: #dc2626;
+  font-weight: 600;
+  min-width: 70px;
+}
+
+.meta-value {
+  color: #9ca3af;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px 20px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+.register-btn:hover {
+  background: #b91c1c;
+}
+
+.register-btn-closed {
+  background: rgb(55, 0, 0);
+  cursor: not-allowed;
+}
+.register-btn-closed:hover {
+  background: rgb(55, 0, 0);
+  cursor: not-allowed;
+}
 .cardImage{
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-
 .rcard{
-  /* width: clamp(180px, 20vw, 240px);  */
-  /* Min 180px, max 240px, adjusts with viewport */
-  /* height: clamp(280px, 30vw, 360px);  */
   width: 260px;
   height: 365px;
   perspective: 1000px;

@@ -43,11 +43,11 @@ const Expo = () => {
 
       <Time />
 
-      <section id="section4" >
+      <section id="section4">
         <div className="relative w-full flex flex-col justify-center items-center md:pt-10 pb-14">
-          <h1 className="text-4xl md:text-5xl font-bold font-ITCMedium tracking-wide">PRE EVENTS</h1>
+          <PreEvents />
         </div>
-
+        
       </section> 
 
       <section id="section5">

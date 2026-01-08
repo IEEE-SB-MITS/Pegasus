@@ -1,95 +1,65 @@
-import ReactLenis from '@studio-freight/react-lenis'
-import React, { useRef } from 'react'
+import React from 'react'
 import Card from '../constants/card'
-import cardFront from '../assets/CardCover.png'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
-import inn from '.././assets/Instagram_46.png';
-import mind from '.././assets/mindspark.png'
-import esp from '.././assets/esp32.png'
-
+import secure_web from '../../src/assets/posters/secure_web.jpeg'
+import build_and_beyond from '../../src/assets/posters/build_and_beyond.jpeg'
+import chatgpt_work from '../../src/assets/posters/how_does_chatgpt_work.jpeg'
 const events = [
   {
-    title: "INNOVISION",
-    desc: "AI Video generating challenge",
-    link: "https://bit.ly/InnovisionRegistration",
-    poster: inn
+    title: "SECUREWEB",
+    desc: "Web Application Security & OWASP Top 10",
+    speaker: "Andrew C Anil, Cybersecurity Analyst",
+    date: "3rd January, 2026",
+    time: "8:00 PM - 9:00 PM",
+    link: "https://forms.gle/CZKeUQGkooDxKQ9n6",
+    poster: secure_web
   },
   {
-    title: "MINDSPARK",
-    desc: "Ideathon",
-    link: "https://bit.ly/IEEEMindSpark",
-    poster: mind
+    title: "BUILD AND BEYOND",
+    desc: "High-energy prototyping session: turning ideas into real solutions",
+    speaker: "Muhammed Shan",
+    date: "December 29, 2025",
+    time: "2:00 PM - 3:00 PM",
+    link: "https://forms.gle/5K17hyrdh2fF6KpcA",
+    poster:  build_and_beyond
   },
   {
-    title: "INTRO TO ESP32",
-    desc: "By Govind S Nath",
-    link: "https://bit.ly/IntroToESP",
-    poster: esp
+    title: "HOW DOES CHATGPT WORK",
+    desc: "Building Intelligent LLMs",
+    speaker: "Emil Biju, Applied Scientist, Microsoft USA",
+    date: "December 20, 2025",
+    time: "10:00 AM - 11:00 AM",
+    link: "https://forms.gle/rrCWZMXmiVr2pbpE8",
+    poster:  chatgpt_work
   },
 ]
 
 
-gsap.registerPlugin(ScrollTrigger);
-
 const PreEvents = () => {
-  const container = useRef();
-  const cardRefs = useRef([]);
-
-  useGSAP(()=>{
-    const cards = cardRefs.current;
-
-    //flip card
-    cards.forEach((card, index) =>{
-      const frontEl = card.querySelector('.flip-card-front');
-      const backEl = card.querySelector('.flip-card-back');
-
-      const startOffset = 1/3 ;
-      const endOffset = 2/3 ;
-
-      ScrollTrigger.create({
-        trigger: card,
-        start: "top+=100 bottom",
-        end: "center center",
-        scrub: 1,
-        id: `rotate-flip-${index}`,
-        onUpdate: (self) =>{
-          const progess = self.progress;
-          if (progess >= startOffset && progess <=endOffset) {
-            const animationProgress = (progess - startOffset)/ (1/3);
-            const frontRotation = -180 * animationProgress;
-            const backRotation = 180 - 180 * animationProgress;
-
-
-            gsap.to(frontEl, {rotateY: frontRotation, ease: "power1.out"});
-            gsap.to(backEl, {rotateY: backRotation, ease:"power1.out"});
-
-          } 
-        }
-      })
-    })
-
-
-  },{scope: container})
   return (
-    <ReactLenis root>
-    <div ref={container} className='cards relative min-h-[500px] my-10 gap-10 md:gap-28'>
-        {events.map((event,index) =>(
-            <Card
+    <div className='py-12 px-4'>
+      <div className='text-center mb-12'>
+        <h1 className='text-4xl md:text-5xl font-bold font-ITCMedium tracking-wide mb-4'>
+          <span className='text-red-600'>PRE</span> EVENTS
+        </h1>
+        <p className='text-gray-400 text-lg font-ProductSans'>Join us for these exciting pre-events before the main hackathon</p>
+      </div>
+      
+      <div className='flex flex-wrap justify-center gap-8 max-w-7xl mx-auto'>
+        {events.map((event, index) => (
+          <Card
             key={index}
-            id={`card-${index+1}`}
-            frontSrc={cardFront}
-            frontAlt='Card image'
             title={event.title}
             desc={event.desc}
+            speaker={event.speaker}
+            date={event.date}
+            time={event.time}
             link={event.link}
-            poster = {event.poster}
-            ref={(el)=>(cardRefs.current[index] = el)}
-            />
+            poster={event.poster}
+            closedRegistrations={true}
+          />
         ))}
+      </div>
     </div>
-    </ReactLenis>
   )
 }
 
