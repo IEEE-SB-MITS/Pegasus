@@ -3,17 +3,8 @@ import Card from '../constants/card'
 import secure_web from '../../src/assets/posters/secure_web.jpeg'
 import build_and_beyond from '../../src/assets/posters/build_and_beyond.jpeg'
 import chatgpt_work from '../../src/assets/posters/how_does_chatgpt_work.jpeg'
-import intro_robotics from '../../src/assets/posters/mobile_robot.jpeg'
+
 const events = [
-  {
-    title: "INTRODUCTION TO ROBOTICS",
-    desc: "Hands-on Mobile Robotic Development Workshop by Inker Robotics",
-    speaker: "Inker Robotics, IEEE RAS SBC MITS",
-    date: "30th January, 2026",
-    time: "9:00 AM - 4:00 PM",
-    link: "https://pegasus.ieeesbmits.in/",
-    poster: intro_robotics
-  },
   {
     title: "SECUREWEB",
     desc: "Web Application Security & OWASP Top 10",
@@ -21,7 +12,8 @@ const events = [
     date: "3rd January, 2026",
     time: "8:00 PM - 9:00 PM",
     link: "https://forms.gle/CZKeUQGkooDxKQ9n6",
-    poster: secure_web
+    poster: secure_web,
+    closedRegistrations: true
   },
   {
     title: "BUILD AND BEYOND",
@@ -30,7 +22,8 @@ const events = [
     date: "December 29, 2025",
     time: "2:00 PM - 3:00 PM",
     link: "https://forms.gle/5K17hyrdh2fF6KpcA",
-    poster:  build_and_beyond
+    poster:  build_and_beyond,
+    closedRegistrations: true
   },
   {
     title: "HOW DOES CHATGPT WORK",
@@ -39,7 +32,8 @@ const events = [
     date: "December 20, 2025",
     time: "10:00 AM - 11:00 AM",
     link: "https://forms.gle/rrCWZMXmiVr2pbpE8",
-    poster:  chatgpt_work
+    poster:  chatgpt_work,
+    closedRegistrations: true
   },
 ]
 
@@ -65,7 +59,7 @@ const PreEvents = () => {
             time={event.time}
             link={event.link}
             poster={event.poster}
-            closedRegistrations={false}
+            closedRegistrations={event.closedRegistrations}
           />
         ))}
       </div>
