@@ -3,7 +3,17 @@ import Card from '../constants/card'
 import secure_web from '../../src/assets/posters/secure_web.jpeg'
 import build_and_beyond from '../../src/assets/posters/build_and_beyond.jpeg'
 import chatgpt_work from '../../src/assets/posters/how_does_chatgpt_work.jpeg'
+import intro_robotics from '../../src/assets/posters/mobile_robot.jpeg'
 const events = [
+  {
+    title: "INTRODUCTION TO ROBOTICS",
+    desc: "Hands-on Mobile Robotic Development Workshop by Inker Robotics",
+    speaker: "Inker Robotics, IEEE RAS SBC MITS",
+    date: "30th January, 2026",
+    time: "9:00 AM - 4:00 PM",
+    link: "https://pegasus.ieeesbmits.in/",
+    poster: intro_robotics
+  },
   {
     title: "SECUREWEB",
     desc: "Web Application Security & OWASP Top 10",
@@ -44,7 +54,7 @@ const PreEvents = () => {
         <p className='text-gray-400 text-lg font-ProductSans'>Join us for these exciting pre-events before the main hackathon</p>
       </div>
       
-      <div className='flex flex-wrap justify-center gap-8 max-w-7xl mx-auto'>
+      <div className='flex flex-wrap justify-center gap-8 max-w-10xl mx-auto'>
         {events.map((event, index) => (
           <Card
             key={index}
@@ -55,7 +65,7 @@ const PreEvents = () => {
             time={event.time}
             link={event.link}
             poster={event.poster}
-            closedRegistrations={true}
+            closedRegistrations={false}
           />
         ))}
       </div>
