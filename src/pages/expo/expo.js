@@ -51,7 +51,7 @@ const Expo = () => {
             </section>
 
             <section id="section4.5">
-                <div className="relative w-full flex flex-col justify-center items-center md:pt-10 pb-14">
+                <div className="relative w-full flex flex-col justify-center items-center md:pt-10 pb-24">
                     <Workshops />
                 </div>
             </section>
