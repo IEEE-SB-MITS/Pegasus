@@ -9,7 +9,7 @@ const workshops = [
     speaker: "Inker Robotics, IEEE RAS SBC MITS",
     date: "30th January, 2026",
     time: "9:00 AM - 4:00 PM",
-    link: "https://pegasus.ieeesbmits.in/",
+    link: "https://forms.gle/VKh8SuA52suWShndA",
     poster: intro_robotics,
     closedRegistrations: false
   }
