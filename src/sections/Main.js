@@ -52,7 +52,7 @@ export const Main = () => {
         <div className="w-28 h-[2px] bg-red-600/60 mb-8" />
 
         {/* Register Button */}
-        <a href="https://registration.ieeesbmits.in">
+        {/* <a href="https://registration.ieeesbmits.in">
           <button
             className="
               font-RobotoSlab
@@ -71,9 +71,9 @@ export const Main = () => {
           >
             REGISTER HERE
           </button>
-        </a>
+        </a> */}
 
-        {/* <button
+        <button
           disabled
           className="
             font-RobotoSlab
@@ -90,8 +90,8 @@ export const Main = () => {
             transition-none
           "
         >
-          REGISTRATION OPENS SOON
-        </button> */}
+          REGISTRATION CLOSED
+        </button>
 
         {/* Login */}
         {/* <a
