@@ -3,6 +3,7 @@ import Card from '../constants/card'
 import secure_web from '../../src/assets/posters/secure_web.jpeg'
 import build_and_beyond from '../../src/assets/posters/build_and_beyond.jpeg'
 import chatgpt_work from '../../src/assets/posters/how_does_chatgpt_work.jpeg'
+import ml_civil from '../../src/assets/posters/ml_civil.jpeg'
 
 const events = [
   {
@@ -33,6 +34,16 @@ const events = [
     time: "10:00 AM - 11:00 AM",
     link: "https://forms.gle/rrCWZMXmiVr2pbpE8",
     poster:  chatgpt_work,
+    closedRegistrations: true
+  },
+  {
+    title: "Machine Learning in Civil",
+    desc: "How machine learning is reshaping civil engineering",
+    speaker: "Joel Basil Kurian, MD, Supe AI",
+    date: "January 13, 2026",
+    time: "10:00 AM - 12:00 PM",
+    link: "https://forms.gle/rrCWZMXmiVr2pbpE8",
+    poster:  ml_civil,
     closedRegistrations: true
   },
 ]

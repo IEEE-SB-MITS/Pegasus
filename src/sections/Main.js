@@ -73,7 +73,7 @@ export const Main = () => {
           </button>
         </a> */}
 
-        <button
+        {/* <button
           disabled
           className="
             font-RobotoSlab
@@ -91,7 +91,20 @@ export const Main = () => {
           "
         >
           REGISTRATION CLOSED
-        </button>
+        </button> */}
+
+        {/* Results Strip */}
+        <section className="w-full pb-6 px-4 text-center">
+          <p className="text-[#D71015] text-xs tracking-[0.35em] font-semibold mb-2">
+            RESULTS ANNOUNCED
+          </p>
+
+          <p className="text-gray-300 text-sm max-w-lg mx-auto leading-relaxed">
+            The results of Round 1 have been communicated via email to
+            shortlisted participants. Please check your registered email ID.
+          </p>
+        </section>
+
 
         {/* Login */}
         {/* <a
