@@ -2,14 +2,13 @@ import React, { act, useEffect, useState } from "react";
 import clglogo from "../assets/p44.webp";
 import styles from "./nav.css";
 import { Link } from "react-scroll"; 
-import DateExtended from "./extension";
 
 const Links = [
   { name: "Home", link: "section1" },
   { name: "About", link: "section2" },
   { name: "Timeline", link: "section3" },
-  { name: "Events", link: "section4" },
-  { name: "Workshops ", link: "section4.5" },
+  { name: "Workshops", link: "section4" },
+  { name: "Events", link: "section4.5" },
   { name: "Contact", link: "section5" },
 ];
 
