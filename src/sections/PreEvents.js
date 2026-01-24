@@ -5,14 +5,26 @@ import build_and_beyond from '../../src/assets/posters/build_and_beyond.jpeg'
 import chatgpt_work from '../../src/assets/posters/how_does_chatgpt_work.jpeg'
 import ml_civil from '../../src/assets/posters/ml_civil.jpeg'
 import quiztrix from '../../src/assets/posters/quiztrix.jpeg'
+import Debug from '../../src/assets/posters/Debug.png'
 
 const events = [
+  {
+    title: "DebugX",
+    desc: "An interactive technical challenge for real-time circuit analysis and debugging",
+    speaker: "",
+    team: "2 members",
+    date: "29th January, 2026",
+    time: "2:00 PM - 3:00 PM",
+    link: "https://forms.gle/YNHdQAvFjpTNA3VQA",
+    poster: Debug,
+    closedRegistrations: false
+  },
   {
     title: "Quiztrix : General Knowledge Arena",
     desc: "Online quiz designed to test your awareness, speed, and presence of mind.",
     speaker: "",
     date: "24th January, 2026",
-    time: "7:00 pm",
+    time: "7:00 PM",
     link: "https://forms.gle/mdeNkwyipLqdHRke8",
     poster: quiztrix,
     closedRegistrations: false
@@ -77,6 +89,7 @@ const PreEvents = () => {
             title={event.title}
             desc={event.desc}
             speaker={event.speaker}
+            team={event.team}
             date={event.date}
             time={event.time}
             link={event.link}

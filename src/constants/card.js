@@ -1,7 +1,7 @@
 import React from 'react'
 import './events.css'
 
-const Card = ({title, desc, speaker, date, time, link, poster,closedRegistrations}) => {
+const Card = ({title, desc, speaker, team, date, time, link, poster,closedRegistrations}) => {
   return (
     <div className='event-card'>
       <div className='event-poster'>
@@ -17,6 +17,13 @@ const Card = ({title, desc, speaker, date, time, link, poster,closedRegistration
             <div className='meta-item'>
               <span className='meta-label font-ProductSans'>Speaker:</span>
               <span className='meta-value font-ProductSans'>{speaker}</span>
+            </div>
+          )}
+
+          {team && (
+            <div className='meta-item'>
+              <span className='meta-label font-ProductSans'>Team Size:</span>
+              <span className='meta-value font-ProductSans'>{team}</span>
             </div>
           )}
           
