@@ -3,11 +3,15 @@ import { doc, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase.js";
 
 export default function StrangerTimer() {
-  const TOTAL_TIME = 24 * 60 * 60 * 1000; // 
+  const TOTAL_TIME = 24 * 60 * 60 * 1000; // 24 hours
+  const ADMIN_PASSWORD = "PEGASUS2026"; // change password here
 
   const [timerData, setTimerData] = useState(null);
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
-  const [isEnded, setIsEnded] = useState(false); 
+  const [isEnded, setIsEnded] = useState(false);
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [authPassword, setAuthPassword] = useState("");
 
   useEffect(() => {
     const ref = doc(db, "hackathon_timer", "timer");
@@ -19,7 +23,6 @@ export default function StrangerTimer() {
     return () => unsub();
   }, []);
 
-  // Update timer every second
   useEffect(() => {
     if (!timerData) return;
 
@@ -34,7 +37,7 @@ export default function StrangerTimer() {
 
       if (remaining <= 0) {
         setTimeLeft(0);
-        setIsEnded(true); // ✅ trigger end screen
+        setIsEnded(true);
       } else {
         setTimeLeft(remaining);
       }
@@ -43,7 +46,6 @@ export default function StrangerTimer() {
     return () => clearInterval(interval);
   }, [timerData]);
 
-  // START
   const startTimer = async () => {
     const ref = doc(db, "hackathon_timer", "timer");
     await updateDoc(ref, {
@@ -51,10 +53,9 @@ export default function StrangerTimer() {
       elapsedTime: 0,
       status: "running",
     });
-    setIsEnded(false); // ✅ reset end screen when restarted
+    setIsEnded(false);
   };
 
-  // PAUSE
   const pauseTimer = async () => {
     if (!timerData) return;
     const ref = doc(db, "hackathon_timer", "timer");
@@ -65,7 +66,6 @@ export default function StrangerTimer() {
     });
   };
 
-  // RESUME
   const resumeTimer = async () => {
     if (!timerData) return;
     const ref = doc(db, "hackathon_timer", "timer");
@@ -76,7 +76,17 @@ export default function StrangerTimer() {
     });
   };
 
-  // Button Logic
+  const restartTimer = async () => {
+    const ref = doc(db, "hackathon_timer", "timer");
+    await updateDoc(ref, {
+      startTime: 0,
+      elapsedTime: 0,
+      status: "idle",
+    });
+    setIsEnded(false);
+    setTimeLeft(TOTAL_TIME);
+  };
+
   const toggleTimer = () => {
     if (!timerData) return;
 
@@ -85,7 +95,6 @@ export default function StrangerTimer() {
     else resumeTimer();
   };
 
-  // Format Time
   const formatTime = (ms) => {
     const totalSeconds = Math.floor(ms / 1000);
     const hrs = Math.floor(totalSeconds / 3600);
@@ -108,60 +117,130 @@ export default function StrangerTimer() {
     return "RESUME";
   };
 
-  // ✅ END SCREEN (NO STYLE CHANGE)
+  // 🔐 AUTH SCREEN
+  if (!isAuthenticated) {
+    return (
+      <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-black text-red-700 relative font-serif">
+
+        <div className="relative z-10 w-[90%] sm:w-full max-w-md p-6 sm:p-8 border border-red-900/30 bg-black/40 backdrop-blur-md rounded-lg shadow-2xl">
+          <div className="mb-8 text-center">
+            <h2 className="font-bold tracking-tighter text-red-600 animate-pulse text-[clamp(1.8rem,4vw,2.5rem)]">
+              ADMIN ACCESS
+            </h2>
+            <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-red-800 to-transparent mt-4"></div>
+          </div>
+
+          <div className="space-y-6">
+            <div className="relative">
+              <label className="text-[10px] uppercase tracking-[0.2em] text-red-500 block mb-2 ml-1">
+                Enter Password
+              </label>
+              <input
+                type="password"
+                value={authPassword}
+                onChange={(e) => setAuthPassword(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && (authPassword === ADMIN_PASSWORD ? setIsAuthenticated(true) : alert("Access Denied ❌"))}
+                className="w-full px-4 py-3 bg-red-950/10 border border-red-900/50 text-red-500 outline-none rounded focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all text-center tracking-widest"
+              />
+            </div>
+
+            <button
+              onClick={() => {
+                if (authPassword === ADMIN_PASSWORD) {
+                  setIsAuthenticated(true);
+                } else {
+                  alert("Access Denied");
+                }
+              }}
+              className="w-full py-3 bg-red-700 hover:bg-red-600 text-black font-black tracking-[0.2em] rounded transition-all active:scale-95 shadow-[0_0_15px_rgba(185,28,28,0.4)]"
+            >
+              AUTHORIZE
+            </button>
+          </div>
+
+          <div className="mt-8 flex justify-between items-center opacity-80">
+            <span className="text-[8px] tracking-widest uppercase">Secured by Pegasus-26</span>
+            <div className="flex gap-1">
+              <div className="w-1 h-1 bg-red-600 rounded-full animate-ping"></div>
+              <div className="w-1 h-1 bg-red-900 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+
+        <style jsx>{`
+          .font-serif {
+            font-family: "ITC Benguiat", "Times New Roman", serif;
+          }
+          @keyframes pulse {
+            0%, 100% { opacity: 1; text-shadow: 0 0 10px rgba(185,28,28,0.8); }
+            50% { opacity: 0.8; text-shadow: 0 0 20px rgba(185,28,28,1); }
+          }
+          .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          }
+        `}</style>
+      </div>
+    );
+  }
+
+  // ⛔ END SCREEN
   if (isEnded) {
     return (
-      <div className="w-screen h-screen flex flex-col items-center justify-center bg-black text-red-700 relative overflow-hidden select-none">
+      <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-black text-red-700 relative select-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-950/20 via-black to-black"></div>
 
-        <h1 className="text-5xl md:text-7xl font-ITCMedium font-bold tracking-[0.25em] text-red-600 uppercase drop-shadow-[0_0_12px_rgba(185,28,28,0.8)]">
+        <h1 className="font-ITCMedium font-bold tracking-[0.2em] text-red-600 uppercase drop-shadow-[0_0_12px_rgba(185,28,28,0.8)]
+          text-[clamp(2rem,6vw,5rem)]">
           HACKATHON ENDED
         </h1>
 
-        <p className="mt-6 text-[10px] md:text-xs tracking-[1em] text-red-900/60 font-mono uppercase">
-          PEGASUS 4.0 — SUBMISSIONS CLOSED
-        </p>
+        <button
+          onClick={restartTimer}
+          className="mt-10 px-8 py-2 bg-red-600 text-black font-bold rounded"
+        >
+          RESTART
+        </button>
       </div>
     );
   }
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center bg-black text-red-700 relative overflow-hidden select-none">
-      {/* Background */}
+    <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-black text-red-700 relative select-none">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-950/20 via-black to-black"></div>
 
-      {/* Title */}
-      <header className="relative z-10 flex flex-col items-center mb-16">
-        <h1 className="text-5xl md:text-7xl font-ITCMedium font-bold tracking-[0.25em] text-red-600 uppercase drop-shadow-[0_0_12px_rgba(185,28,28,0.8)]">
+      <header className="relative z-10 flex flex-col items-center mb-10 sm:mb-16">
+        <h1 className="font-ITCMedium font-bold tracking-[0.2em] sm:tracking-[0.25em] text-red-600 uppercase drop-shadow-[0_0_12px_rgba(185,28,28,0.8)]
+          text-[clamp(2rem,6vw,5rem)]">
           PEGASUS 4.0
         </h1>
       </header>
 
-      {/* Timer */}
-      <main className="relative z-10 flex items-center gap-2 md:gap-12">
+      <main className="relative z-10 flex items-center gap-1 sm:gap-4 md:gap-12 flex-wrap justify-center">
         <TimeUnit value={hrs} label="Hours" />
-        <span className="text-4xl md:text-7xl font-serif text-red-700 mt-[-2rem] animate-pulse">
-          :
-        </span>
+        <span className="text-[clamp(2rem,6vw,5rem)] font-serif text-red-700 animate-pulse">:</span>
         <TimeUnit value={mins} label="Minutes" />
-        <span className="text-4xl md:text-7xl font-serif text-red-700 mt-[-2rem] animate-pulse">
-          :
-        </span>
+        <span className="text-[clamp(2rem,6vw,5rem)] font-serif text-red-700 animate-pulse">:</span>
         <TimeUnit value={secs} label="Seconds" />
       </main>
 
-      {/* CONTROL BUTTON */}
-      <button
-        onClick={toggleTimer}
-        className="relative z-10 mt-14 px-10 py-2 text-lg tracking-widest font-bold text-black bg-red-600 rounded-md 
-                   transition-all duration-300 font-serif"
-      >
-        {getButtonText()}
-      </button>
+      <div className="flex gap-3 sm:gap-6 mt-8 sm:mt-14 relative z-10 flex-wrap justify-center">
+        <button
+          onClick={toggleTimer}
+          className="px-6 sm:px-10 py-2 text-sm sm:text-lg tracking-widest font-bold text-black bg-red-600 rounded-md transition-all duration-300 font-serif"
+        >
+          {getButtonText()}
+        </button>
 
-      {/* Footer */}
-      <footer className="absolute bottom-12 z-10">
-        <p className="text-[10px] md:text-xs tracking-[1em] text-red-900/60 font-mono uppercase">
+        <button
+          onClick={restartTimer}
+          className="px-6 sm:px-10 py-2 text-sm sm:text-lg tracking-widest font-bold text-red-600 border border-red-600 rounded-md transition-all duration-300 font-serif"
+        >
+          RESTART
+        </button>
+      </div>
+
+      <footer className="absolute bottom-6 sm:bottom-12 z-10">
+        <p className="text-[8px] sm:text-xs tracking-[0.6em] sm:tracking-[1em] text-red-900/60 font-mono uppercase">
           MITS, Varikoli — 2026
         </p>
       </footer>
@@ -178,10 +257,13 @@ export default function StrangerTimer() {
 function TimeUnit({ value, label }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-7xl md:text-[14rem] font-bold font-serif text-red-600 drop-shadow-[0_0_25px_rgba(185,28,28,0.6)]">
+      <span className="font-bold font-serif text-red-600 drop-shadow-[0_0_25px_rgba(185,28,28,0.6)]
+        text-[clamp(2.8rem,10vw,14rem)] leading-none">
         {value}
       </span>
-      <span className="mt-4 text-[9px] md:text-xs tracking-[0.4em] text-red-900/80 font-bold uppercase border-t border-red-950 pt-2 w-full text-center">
+
+      <span className="mt-2 sm:mt-4 text-[clamp(0.45rem,1vw,0.8rem)]
+        tracking-[0.3em] sm:tracking-[0.4em] text-red-900/80 font-bold uppercase border-t border-red-950 pt-1 sm:pt-2 w-full text-center">
         {label}
       </span>
     </div>
