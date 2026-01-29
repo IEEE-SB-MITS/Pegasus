@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { doc, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase.js";
-
+import pegasusLogo from "../../assets/ll4.png";
 export default function StrangerTimer() {
   const TOTAL_TIME = 24 * 60 * 60 * 1000; // 24 hours
   const ADMIN_PASSWORD = "PEGASUS2026"; // change password here
@@ -208,11 +208,13 @@ export default function StrangerTimer() {
     <div className="w-screen h-screen overflow-hidden flex flex-col items-center justify-center bg-black text-red-700 relative select-none">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-950/20 via-black to-black"></div>
 
-      <header className="relative z-10 flex flex-col items-center mb-10 sm:mb-16">
-        <h1 className="font-ITCMedium font-bold tracking-[0.2em] sm:tracking-[0.25em] text-red-600 uppercase drop-shadow-[0_0_12px_rgba(185,28,28,0.8)]
-          text-[clamp(2rem,6vw,5rem)]">
-          PEGASUS 4.0
-        </h1>
+      <header className="relative z-10 flex flex-col items-center mb-16">
+        <img
+          src={pegasusLogo} 
+          alt="PEGASUS 4.0"
+          className="drop-shadow-[0_0_12px_rgba(185,28,28,0.8)] 
+                    w-[400px] md:w-[500px]"
+        />
       </header>
 
       <main className="relative z-10 flex items-center gap-1 sm:gap-4 md:gap-12 flex-wrap justify-center">
@@ -223,7 +225,7 @@ export default function StrangerTimer() {
         <TimeUnit value={secs} label="Seconds" />
       </main>
 
-      <div className="flex gap-3 sm:gap-6 mt-8 sm:mt-14 relative z-10 flex-wrap justify-center">
+      <div className="flex gap-3 sm:gap-6 mt-8 sm:mt-14 relative z-10 flex-wrap justify-center mb-10">
         <button
           onClick={toggleTimer}
           className="px-6 sm:px-10 py-2 text-sm sm:text-lg tracking-widest font-bold text-black bg-red-600 rounded-md transition-all duration-300 font-serif"
